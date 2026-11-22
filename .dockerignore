@@ -8,3 +8,5 @@ __pycache__
 compose.yaml
 *.zim
 *.zim.part
+docs/screenshots
+docs/icon.svg

@@ -1,8 +1,18 @@
+<p align="center"><img src="docs/icon.svg" width="96" alt="Travel Guide icon"></p>
+
 # Travel Guide: offline Wikivoyage, with answers
 
 An [AirplaneMode](https://github.com/jessewolcott/airplanemode) app. The whole English
 [Wikivoyage](https://en.wikivoyage.org) (68,000 destinations, 260 MB) on the box, readable with
 no internet:
+
+<p align="center">
+  <img src="docs/screenshots/home.png" width="230" alt="Ask or search the offline guide">
+  <img src="docs/screenshots/ask.png" width="230" alt="An answer from the on-board model, with the passages it came from">
+  <img src="docs/screenshots/article.png" width="230" alt="A Wikivoyage article, offline">
+</p>
+
+<sub>Screenshots from the laptop dev stack; not yet tested on real hardware.</sub>
 
 - **Search** every destination, with suggestions as you type and full-text results.
 - **Read** articles in a clean, phone-friendly dark page. Links between articles work offline,
