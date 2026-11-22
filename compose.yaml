@@ -9,7 +9,7 @@ name: guide-dev
 services:
   llm:
     image: ghcr.io/ggml-org/llama.cpp:server-b12602
-    command: ["-hf", "${MODEL:-Qwen/Qwen2.5-0.5B-Instruct-GGUF:Q4_K_M}", "--host", "0.0.0.0", "--port", "8080", "-c", "4096", "-np", "2"]
+    command: ["-hf", "${MODEL:-Qwen/Qwen2.5-0.5B-Instruct-GGUF:Q4_K_M}", "--host", "0.0.0.0", "--port", "8080", "-c", "4096", "-np", "2", "--no-mmproj", "--reasoning", "off", "--cache-ram", "256"]
     environment:
       LLAMA_CACHE: /models
     volumes:

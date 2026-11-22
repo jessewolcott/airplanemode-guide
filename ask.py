@@ -192,7 +192,7 @@ def score_passages(cands, question, k1=1.4, b=0.75, places=()):
 
 
 def tokens(text):
-    return len(text) // 4 + 1  # rough, but close enough for Qwen-style tokenizers on English
+    return len(text) // 4 + 1  # rough, but close enough for small-model tokenizers (Qwen, Gemma) on English
 
 
 def gather(lib, question, budget_tokens=900, max_passages=6):
