@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Standalone: up (own 0.5B model)",
+			"detail": "http://localhost:8767. First run downloads ~260 MB of guide and ~400 MB of model.",
+			"type": "shell",
+			"command": "docker compose up -d --build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Standalone: down",
+			"type": "shell",
+			"command": "docker compose down",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tests (in Docker: libzim needs Python 3.11+)",
+			"type": "shell",
+			"command": "docker build -t airplanemode-guide:test . ; docker run --rm -v \"${workspaceFolder}:/src:ro\" -w /src airplanemode-guide:test python tests/test_guide.py",
+			"group": { "kind": "test", "isDefault": true },
+			"problemMatcher": []
+		}
+	]
+}

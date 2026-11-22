@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+*.gguf
+*.zim
+*.zim.part

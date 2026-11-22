@@ -1,0 +1,31 @@
+# Standalone development: the guide plus its own small model, without the rest of AirplaneMode.
+#   docker compose up -d --build      ->  http://localhost:8767
+# The first start downloads English Wikivoyage (~260 MB) into the guide-data volume, and the
+# model (~400 MB) into the models volume.
+# On the box, the guide runs from the airplanemode platform repo instead, using the shared model.
+
+name: guide-dev
+
+services:
+  llm:
+    image: ghcr.io/ggml-org/llama.cpp:server-b12602
+    command: ["-hf", "${MODEL:-Qwen/Qwen2.5-0.5B-Instruct-GGUF:Q4_K_M}", "--host", "0.0.0.0", "--port", "8080", "-c", "4096", "-np", "2"]
+    environment:
+      LLAMA_CACHE: /models
+    volumes:
+      - models:/models
+
+  guide:
+    build: .
+    environment:
+      LLM_URL: http://llm:8080
+      # ZIM_URL: https://download.kiwix.org/zim/wikivoyage/wikivoyage_en_europe_nopic_2026-09.zim   # smaller (80 MB)
+    volumes:
+      - guide-data:/data
+    ports:
+      - "${PORT:-8767}:8000"
+    mem_limit: 256m
+
+volumes:
+  models:
+  guide-data:

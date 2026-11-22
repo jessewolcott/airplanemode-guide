@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Travel Guide</title>
+<link rel="icon" href="static/icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #0d0f12; --panel: #14171c; --panel2: #1a1e24; --line: #252a32; --line2: #333a44;
+    --ink: #e4dfd3; --dim: #8f8c84; --accent: #5ec4b6; --amber: #f2b34b; --bad: #e07a6a;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 var(--sans); }
+  main { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand svg { width: 28px; height: 28px; color: var(--accent); flex: none; }
+  h1 { font-size: 1.35rem; margin: 0; }
+  h1 span { color: var(--accent); }
+  a.home { color: var(--dim); font: .8rem var(--mono); text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
+  a.home:hover { color: var(--ink); border-color: var(--dim); }
+  a { color: var(--accent); }
+
+  .banner { display: none; padding: 14px 16px; border-radius: 10px; background: var(--panel); border: 1px solid var(--line); margin-bottom: 16px; }
+  .banner.show { display: block; }
+  .banner b { display: block; }
+  .banner small { color: var(--dim); }
+  .meter { height: 6px; background: var(--line); border-radius: 3px; margin-top: 10px; overflow: hidden; }
+  .meter i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .4s; }
+
+  .modes { display: inline-flex; border: 1px solid var(--line2); border-radius: 9px; padding: 3px; gap: 3px; margin-bottom: 10px; }
+  .modes button { font: 600 .9rem var(--sans); color: var(--dim); background: none; border: 0; border-radius: 6px; padding: 7px 14px; cursor: pointer; }
+  .modes button[aria-pressed="true"] { background: var(--panel2); color: var(--ink); }
+  form.box { position: relative; display: flex; gap: 8px; }
+  form.box input { flex: 1; min-width: 0; font: 1rem var(--sans); color: var(--ink); background: var(--panel); border: 1px solid var(--line2); border-radius: 9px; padding: 12px 14px; }
+  form.box input:focus { outline: none; border-color: var(--accent); }
+  .btn { font: 600 .95rem var(--sans); padding: 11px 16px; border-radius: 9px; border: 1px solid var(--accent); background: var(--accent); color: #08201d; cursor: pointer; }
+  .btn:disabled { opacity: .55; cursor: wait; }
+  ul.sugg { position: absolute; top: 100%; left: 0; right: 0; z-index: 5; list-style: none; margin: 4px 0 0; padding: 4px; background: var(--panel2); border: 1px solid var(--line2); border-radius: 9px; display: none; }
+  ul.sugg.show { display: block; }
+  ul.sugg a { display: block; padding: 8px 10px; border-radius: 6px; color: var(--ink); text-decoration: none; }
+  ul.sugg a:hover, ul.sugg a:focus { background: var(--line); outline: none; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .examples button { font: .85rem var(--sans); color: var(--dim); background: none; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+  .examples button:hover, .examples button:focus-visible { color: var(--ink); border-color: var(--dim); background: none; outline: none; }
+  .examples button:focus:not(:focus-visible) { background: none; }
+
+  #out { margin-top: 22px; }
+  h2.section { font: 500 .75rem var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--dim); margin: 26px 0 10px; }
+  .answer { padding: 16px; border-radius: 10px; background: #12221f; border: 1px solid #24443f; }
+  .answer p { margin: 0; }
+  .answer .src { margin-top: 10px; font-size: .85rem; color: var(--dim); }
+  .answer.wait { color: var(--dim); background: var(--panel); border-color: var(--line); }
+  .answer.note { color: var(--dim); background: var(--panel); border-color: var(--line); font-size: .9rem; }
+  .dots::after { content: "…"; animation: dots 1.4s steps(4) infinite; display: inline-block; width: 1.2em; overflow: hidden; vertical-align: bottom; }
+  @keyframes dots { from { width: 0; } to { width: 1.2em; } }
+  .card { display: block; padding: 14px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 10px; color: inherit; text-decoration: none; }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+  .card .where { font-size: .8rem; color: var(--dim); margin-bottom: 4px; }
+  .card .where b { color: var(--accent); font-weight: 600; }
+  .card p { margin: 0; font-size: .95rem; }
+  .card .n { font: .7rem var(--mono); color: var(--dim); border: 1px solid var(--line2); border-radius: 4px; padding: 0 5px; margin-right: 6px; }
+  .card h3 { margin: 0 0 4px; font-size: 1rem; color: var(--ink); }
+  .card .snip { color: var(--dim); font-size: .88rem; }
+  .card .snip b { color: var(--ink); font-weight: 600; }
+  .empty { color: var(--dim); }
+  .err { color: var(--bad); }
+  footer { margin-top: 40px; color: var(--dim); font: .75rem var(--mono); line-height: 1.6; }
+  @media (prefers-reduced-motion: reduce) { .dots::after { animation: none; width: auto; } .meter i { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>
+      <h1>Travel <span>Guide</span></h1>
+    </div>
+    <a class="home" href="../">AirplaneMode</a>
+  </header>
+
+  <section class="banner" id="banner" aria-live="polite">
+    <b id="bannerTitle"></b><small id="bannerText"></small>
+    <div class="meter" id="meter" hidden><i id="meterBar"></i></div>
+  </section>
+
+  <div class="modes" role="group" aria-label="Mode">
+    <button type="button" id="modeAsk" aria-pressed="true">Ask</button>
+    <button type="button" id="modeSearch" aria-pressed="false">Search</button>
+  </div>
+  <form class="box" id="form" autocomplete="off">
+    <input id="q" type="search" enterkeyhint="search" maxlength="300" aria-label="Your question" placeholder="Ask about a place: what to eat, how to get there…">
+    <button class="btn" id="go">Ask</button>
+    <ul class="sugg" id="sugg" role="listbox"></ul>
+  </form>
+  <div class="examples" id="examples">
+    <button type="button">What should I eat in Lisbon?</button>
+    <button type="button">How do I get from the airport to the centre in Osaka?</button>
+    <button type="button">Is the tap water safe in Mexico City?</button>
+    <button type="button">Where can I go hiking near Cape Town?</button>
+  </div>
+
+  <div id="out"></div>
+
+  <footer>
+    Works with no internet: everything here is stored on this box.<br>
+    <span id="credit">Travel content from Wikivoyage, CC BY-SA 4.0.</span>
+  </footer>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const art = (zim, path, anchor) => `z/${encodeURIComponent(zim)}/${path.split("/").map(encodeURIComponent).join("/")}${anchor ? "#" + encodeURIComponent(anchor) : ""}`;
+let mode = "ask", ready = false, llm = "none", run = 0;
+
+function setMode(m) {
+  mode = m;
+  $("#modeAsk").setAttribute("aria-pressed", m === "ask");
+  $("#modeSearch").setAttribute("aria-pressed", m === "search");
+  $("#go").textContent = m === "ask" ? "Ask" : "Search";
+  $("#q").placeholder = m === "ask" ? "Ask about a place: what to eat, how to get there…" : "A place or a topic: Lisbon, night trains…";
+  $("#q").setAttribute("aria-label", m === "ask" ? "Your question" : "Search the guide");
+  $("#examples").hidden = m !== "ask";
+  hideSugg();
+}
+$("#modeAsk").onclick = () => { setMode("ask"); $("#q").focus(); };
+$("#modeSearch").onclick = () => { setMode("search"); $("#q").focus(); };
+$("#examples").onclick = e => { const b = e.target.closest("button"); if (!b) return; $("#q").value = b.textContent; submit(); };
+
+// ---- status / download progress ----
+function mb(n) { return n == null ? "?" : (n / 1048576).toFixed(0) + " MB"; }
+async function health() {
+  try {
+    const h = await (await fetch("health")).json();
+    ready = h.content_ready; llm = h.llm;
+    const d = h.download || {};
+    const show = !ready;
+    $("#banner").classList.toggle("show", show);
+    if (h.zims && h.zims.length) $("#credit").textContent = `Travel content: ${h.zims.map(z => z.title + (z.date ? " (" + z.date + ")" : "")).join(", ")}. CC BY-SA 4.0.`;
+    if (show) {
+      $("#meter").hidden = !(d.state === "downloading" || d.state === "verifying");
+      $("#meterBar").style.width = (d.percent || 0) + "%";
+      if (d.state === "downloading") {
+        $("#bannerTitle").textContent = `Downloading the guide… ${d.percent != null ? d.percent.toFixed(0) + "%" : ""}`;
+        $("#bannerText").textContent = `${mb(d.done)} of ${mb(d.total)}${d.eta_s != null ? ", about " + Math.ceil(d.eta_s / 60) + " min left" : ""}. It only needs the internet this once.`;
+      } else if (d.state === "verifying") {
+        $("#bannerTitle").textContent = "Checking the download…";
+        $("#bannerText").textContent = "Almost ready.";
+      } else if (d.state === "waiting") {
+        $("#bannerTitle").textContent = "The guide hasn't been downloaded yet";
+        $("#bannerText").textContent = "It downloads by itself the next time the box is online" + (d.error ? ` (last try: ${d.error})` : "") + ".";
+      } else {
+        $("#bannerTitle").textContent = "No guide content on this box";
+        $("#bannerText").textContent = "Put a Kiwix .zim file in the guide's data folder, or set ZIM_URL and go online once.";
+      }
+    }
+    return h;
+  } catch { return null; }
+}
+health().then(() => { const p = new URLSearchParams(location.search).get("q"); if (p) { setMode("search"); $("#q").value = p; submit(); } });
+setInterval(() => { if (!ready) health(); }, 3000);
+
+// ---- suggestions (search mode) ----
+let sTimer, sRun = 0;
+function hideSugg() { $("#sugg").classList.remove("show"); }
+$("#q").addEventListener("input", () => {
+  clearTimeout(sTimer);
+  const q = $("#q").value.trim();
+  if (mode !== "search" || q.length < 2 || !ready) return hideSugg();
+  sTimer = setTimeout(async () => {
+    const mine = ++sRun;
+    try {
+      const { results } = await (await fetch("api/suggest?q=" + encodeURIComponent(q))).json();
+      if (mine !== sRun) return;
+      $("#sugg").innerHTML = results.map(r => `<li><a href="${art(r.zim, r.path)}">${esc(r.title)}</a></li>`).join("");
+      $("#sugg").classList.toggle("show", results.length > 0);
+    } catch { hideSugg(); }
+  }, 150);
+});
+document.addEventListener("click", e => { if (!e.target.closest("form.box")) hideSugg(); });
+$("#q").addEventListener("keydown", e => {
+  if (e.key === "Escape") hideSugg();
+  if (e.key === "ArrowDown" && $("#sugg").classList.contains("show")) { e.preventDefault(); $("#sugg a")?.focus(); }
+});
+$("#sugg").addEventListener("keydown", e => {
+  const a = e.target.closest("li"); if (!a) return;
+  if (e.key === "ArrowDown") { e.preventDefault(); a.nextElementSibling?.querySelector("a").focus(); }
+  if (e.key === "ArrowUp") { e.preventDefault(); (a.previousElementSibling?.querySelector("a") || $("#q")).focus(); }
+});
+
+// ---- submit ----
+$("#form").addEventListener("submit", e => { e.preventDefault(); submit(); });
+async function submit() {
+  const q = $("#q").value.trim();
+  hideSugg();
+  if (!q) return;
+  const mine = ++run;
+  $("#go").disabled = true;
+  try { mode === "ask" ? await doAsk(q, mine) : await doSearch(q, mine); }
+  catch (err) { if (mine === run) $("#out").innerHTML = `<p class="err">${esc(err.message)}</p>`; }
+  finally { $("#go").disabled = false; }
+}
+async function post(url, body) {
+  const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(typeof d.detail === "string" ? d.detail : "Something went wrong. Try again.");
+  return d;
+}
+
+async function doSearch(q, mine) {
+  $("#out").innerHTML = `<p class="empty dots">Searching</p>`;
+  const r = await fetch("api/search?q=" + encodeURIComponent(q));
+  const d = await r.json();
+  if (!r.ok) throw new Error(d.detail || "Search failed.");
+  if (mine !== run) return;
+  const total = d.results.length ? d.results[0].total : 0;
+  $("#out").innerHTML = d.results.length
+    ? `<h2 class="section">${total > d.results.length ? "Top " + d.results.length + " of about " + total : d.results.length} results</h2>` +
+      d.results.map(x => `<a class="card" href="${art(x.zim, x.path)}"><h3>${esc(x.title)}</h3><div class="snip">${x.snippet}</div></a>`).join("")
+    : `<p class="empty">Nothing found for “${esc(q)}”. Try a place name.</p>`;
+}
+
+function passageCard(p, i) {
+  return `<a class="card" href="${art(p.zim, p.path, p.anchor)}">
+    <div class="where"><span class="n">${i + 1}</span><b>${esc(p.title)}</b>${p.section ? " · " + esc(p.section) : ""}</div>
+    <p>${esc(p.text)}</p></a>`;
+}
+async function doAsk(q, mine) {
+  $("#out").innerHTML = `<p class="empty dots">Looking it up</p>`;
+  const d = await post("api/ask", { question: q });
+  if (mine !== run) return;
+  if (!d.passages.length) {
+    $("#out").innerHTML = `<p class="empty">The guide doesn't seem to cover that. Try naming the place, or use <b>Search</b>.</p>`;
+    return;
+  }
+  const wantModel = d.model && llm !== "none";
+  $("#out").innerHTML = `<div id="ans"></div>
+    <h2 class="section">Here's what the guide says</h2>${d.passages.map(passageCard).join("")}
+    <h2 class="section">Read more</h2>${d.articles.map(a => `<a class="card" href="${art(a.zim, a.path)}"><h3>${esc(a.title)}</h3></a>`).join("")}`;
+  if (!wantModel) return;
+  $("#ans").innerHTML = `<div class="answer wait"><span class="dots">The on-board model is writing a short answer from these passages. On the box that takes up to a minute</span></div>`;
+  let a;
+  try { a = await post("api/answer", { id: d.id }); } catch (err) { a = { status: "error", detail: err.message }; }
+  if (mine !== run) return;
+  if (a.status === "ok") {
+    const src = a.sources.map(n => d.passages[n - 1]).filter(Boolean);
+    $("#ans").innerHTML = `<div class="answer"><p>${esc(a.answer)}</p>
+      <div class="src">From ${src.map(p => `<a href="${art(p.zim, p.path, p.anchor)}">${esc(p.title)}${p.section ? " · " + esc(p.section) : ""}</a>`).join(", ")} · written by the on-board model, so check the passages below.</div></div>`;
+  } else {
+    $("#ans").innerHTML = `<div class="answer note">${esc(a.detail || "No short answer this time.")} The passages below are straight from the guide.</div>`;
+  }
+}
+</script>
+</body>
+</html>

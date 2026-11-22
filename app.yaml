@@ -1,0 +1,19 @@
+# AirplaneMode app manifest. See the platform repo: docs/app-contract.md
+id: guide
+name: Travel Guide
+description: Offline Wikivoyage. Search every destination, or ask a question and the on-board model answers from the guide.
+image: ghcr.io/jessewolcott/airplanemode-guide
+port: 8000
+path: /guide/
+memory: 256m          # see README "Memory": ~100 MB with the full English Wikivoyage open
+needs:
+  llm: optional       # without it, "ask" shows the guide's best passages instead of a written answer
+volumes:
+  /data: the downloaded guide (ZIM files in /data/zim, ~260 MB for English Wikivoyage)
+env:
+  LLM_URL: URL of the shared model (OpenAI-compatible chat API). Empty = no model.
+  ZIM_URL: ZIM file(s) to download while online, space-separated. Empty = never download (bring your own .zim).
+  ZIM_SHA256: Expected SHA-256 of ZIM_URL (optional; pinned for the default, else Kiwix's .sha256 file is used).
+  LLM_TIMEOUT: Seconds to wait for the model's answer (default 90).
+  PASSAGE_TOKENS: Prompt budget for the guide's passages (default 900).
+  CLUSTER_CACHE_MB: libzim's decompressed-cluster cache (default 8).

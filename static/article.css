@@ -1,0 +1,65 @@
+/* Article pages: the guide's text in the platform's dark palette, built for reading on a phone. */
+:root {
+  --bg: #0d0f12; --panel: #14171c; --panel2: #1a1e24; --line: #252a32; --line2: #333a44;
+  --ink: #e4dfd3; --dim: #8f8c84; --accent: #5ec4b6;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+[id] { scroll-margin-top: 64px; }  /* #section links land below the sticky bar */
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.62 var(--sans); }
+
+header.bar { position: sticky; top: 0; z-index: 10; display: flex; gap: 10px; align-items: center; padding: 10px 16px; background: rgba(13, 15, 18, .94); border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
+header.bar a.home { flex: none; color: var(--dim); font: .8rem var(--mono); text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
+header.bar a.home:hover { color: var(--ink); border-color: var(--dim); }
+header.bar form { flex: 1; min-width: 0; }
+header.bar input { width: 100%; font: .95rem var(--sans); color: var(--ink); background: var(--panel); border: 1px solid var(--line2); border-radius: 8px; padding: 8px 11px; }
+header.bar input:focus { outline: none; border-color: var(--accent); }
+
+article.zim { max-width: 46rem; margin: 0 auto; padding: 8px 16px 24px; overflow-wrap: break-word; }
+article.zim h1 { font-size: 1.8rem; line-height: 1.2; margin: 18px 0 6px; }
+article.zim h2 { font-size: 1.35rem; margin: 1.8em 0 .5em; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+article.zim h3 { font-size: 1.12rem; margin: 1.4em 0 .4em; }
+article.zim h4 { font-size: 1rem; margin: 1.2em 0 .3em; color: var(--dim); }
+article.zim p, article.zim li, article.zim dd { color: var(--ink); }
+article.zim a { color: var(--accent); text-decoration: none; }
+article.zim a:hover { text-decoration: underline; }
+article.zim a.ext { color: var(--dim); }
+article.zim a.ext::after { content: " ↗"; font-size: .8em; }
+article.zim a.geo::before { content: "⌖ "; }
+article.zim ul, article.zim ol { padding-left: 1.3em; }
+article.zim li { margin: .35em 0; }
+article.zim blockquote { margin: 1em 0; padding: .2em 1em; border-left: 3px solid var(--line2); color: var(--dim); }
+article.zim code, article.zim pre { font-family: var(--mono); font-size: .9em; background: var(--panel); border-radius: 4px; padding: 1px 4px; }
+article.zim pre { padding: 10px; overflow-x: auto; }
+article.zim hr { border: 0; border-top: 1px solid var(--line); }
+article.zim img { max-width: 100%; height: auto; }
+article.zim sup.reference, article.zim .mw-ref { font-size: .75em; }
+
+/* tables (climate boxes, phrasebooks) scroll sideways instead of breaking the page */
+article.zim table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1em 0; font-size: .9em; background: transparent !important; color: var(--ink) !important; }
+article.zim th, article.zim td { border: 1px solid var(--line); padding: 4px 8px; background: transparent !important; color: inherit !important; vertical-align: top; }
+article.zim th { background: var(--panel) !important; }
+
+/* Wikivoyage listings: name bold, details dim */
+article.zim .vcard .fn, article.zim .listing-name { font-weight: 600; }
+article.zim .listing-metadata, article.zim .listing-coordinates, article.zim .listing-lastedit,
+article.zim .mw-kartographer-maplink:not([href]) { display: none; }
+article.zim .listing-address, article.zim .listing-directions, article.zim .listing-phone,
+article.zim .listing-hours, article.zim .listing-price, article.zim .listing-checkin,
+article.zim .listing-checkout { color: var(--dim); font-size: .92em; }
+
+/* boxes and notes from templates: tone down whatever colours they set */
+article.zim .pp_infobox, article.zim .warningbox, article.zim .cautionbox, article.zim .infobox,
+article.zim .thumb, article.zim figure, article.zim [class*="box"] { background: var(--panel) !important; color: var(--ink) !important; border-color: var(--line2) !important; border-radius: 8px; }
+article.zim .warningbox, article.zim .cautionbox { border-left: 3px solid #e07a6a !important; padding: 8px 12px; margin: 1em 0; }
+article.zim [style*="background"] { background: transparent !important; }
+article.zim [style*="color"] { color: inherit !important; }
+article.zim figure { margin: 1em 0; padding: 6px 10px; }
+article.zim figcaption { font-size: .85em; color: var(--dim); }
+article.zim .pagebanner, article.zim .wpb-banner, article.zim #mw-panel-toc, article.zim .vector-toc { display: none; }
+article.zim details > summary { cursor: pointer; }
+
+footer.attrib { max-width: 46rem; margin: 0 auto; padding: 18px 16px 40px; border-top: 1px solid var(--line); color: var(--dim); font-size: .8rem; }
+footer.attrib a { color: var(--dim); }
