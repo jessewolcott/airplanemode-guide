@@ -14,7 +14,7 @@ and `docs/app-contract.md` for the rules this app must follow.
 ```powershell
 docker compose up -d --build        # standalone with its own 0.5B model -> http://localhost:8767
 # tests: libzim needs Python 3.11+, local Python is 3.10, so run them in Docker
-docker run --rm -v "H:\Github\airplanemode-guide:/src" -w /src python:3.12-slim sh -c "pip install -q -r requirements.txt && python tests/test_guide.py"
+docker run --rm -v "H:\Github\airplanemode\airplanemode-guide:/src" -w /src python:3.12-slim sh -c "pip install -q -r requirements.txt && python tests/test_guide.py"
 ```
 
 In Git Bash, set `MSYS_NO_PATHCONV=1` for `docker run -v`, and keep scratch files in the repo
