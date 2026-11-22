@@ -34,7 +34,7 @@ docker compose up -d --build        # http://localhost:8767
 ```
 
 The first start downloads English Wikivoyage (~260 MB) and a 0.5B model (~400 MB). Use the
-box's model with `MODEL=Qwen/Qwen2.5-1.5B-Instruct-GGUF:Q4_K_M`, or another port with `PORT=9000`.
+box's model with `MODEL=unsloth/gemma-4-E2B-it-GGUF:Q4_K_M`, or another port with `PORT=9000`.
 
 **Tests** build a tiny guide with a few fake articles, so nothing is downloaded. libzim needs
 Python 3.11+:
