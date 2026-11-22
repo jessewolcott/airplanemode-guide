@@ -252,6 +252,25 @@ def test_ask_finds_the_right_passages():
     assert d["passages"] == [] and d["id"] is None
 
 
+def test_place_names_still_count_outside_their_own_article():
+    """'Kansai airport' in the Osaka article must beat Osaka's Itami airport section, even
+    though Kansai and Osaka are both places named in the question."""
+    def cand(title, section, text):
+        return {"zim": "z", "path": title, "title": title, "section": section, "anchor": None,
+                "text": text, "place": True}
+    cands = [
+        cand("Osaka", "Get in › Itami Airport", "Itami Airport is the city's older airport. From the airport, "
+             "the monorail and airport buses run towards the city; a taxi to the city center is quicker."),
+        cand("Osaka", "Get in › Kansai International Airport", "From Kansai, the JR Haruka express and the "
+             "Nankai rapi:t train run to the city in about 40 minutes."),
+        cand("Kansai", "Get in › By plane", "There are three airports in the region. Most international "
+             "flights land at the main one, on an artificial island in Osaka Bay."),
+    ]
+    scored = asking.score_passages(cands, "How do I get from Kansai airport to Osaka city centre?",
+                                   places=["Kansai", "Osaka"])
+    assert scored[0][1]["section"] == "Get in › Kansai International Airport", [(round(s, 2), c["section"]) for s, c in scored]
+
+
 def test_answer_from_model():
     d = ask("What should I eat in Lisbon?")
     llm.reply = {"answer": "Try pastel de nata, the custard tart, and grilled sardines; bacalhau "

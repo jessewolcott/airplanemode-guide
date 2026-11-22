@@ -38,10 +38,22 @@ or the session scratchpad: Docker can't see Git Bash's `/tmp`.
 
 Push a `vX.Y.Z` tag. CI tests, then publishes `ghcr.io/jessewolcott/airplanemode-guide:X.Y.Z`
 (arm64 + amd64). Then add or bump it in `../airplanemode/compose.yaml`.
-**Ask Jesse before pushing a release tag.** Not released yet; no GitHub repo yet.
+**Ask Jesse before pushing a release tag.** Repo: github.com/jessewolcott/airplanemode-guide.
 
 ## Not verified yet
 
 - Speed on the R6S: retrieval is ~0.1 s on a PC; the model's answer (≈850-token prompt, ~100
   tokens out) took 3–6 s with the 1.5B model on a PC, so expect tens of seconds on the box.
 - Memory on arm64.
+
+## Known weak spots (ask)
+
+- Retrieval takes at most 3 articles: named places first, then full-text order. A question
+  about a thing with its own article ("Kansai airport" → *Kansai International Airport*) may
+  not get that article when two places are named. Sorting hits by title overlap was tried
+  and pulled *Lisbon Airport*'s food section above *Lisbon › Eat*, so it was dropped.
+- The 1.5B model sometimes answers from a neighbouring passage: for "Kansai airport to Osaka
+  city centre" it can describe Itami airport's monorail. The grounding guard can't catch that
+  (the words are in the passages). Use that question when working on ranking.
+- Python on Windows reads piped text as cp1252: decode responses as UTF-8 when checking
+  answers from Git Bash, or you'll see mojibake that isn't there.

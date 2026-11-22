@@ -150,13 +150,16 @@ def section_matches(head, wanted):
 def score_passages(cands, question, k1=1.4, b=0.75, places=()):
     """BM25 over the candidate passages, plus boosts for the section the question is about
     and for the article of a place the question names. Once a place's article is found, the
-    place's name only picks articles: it's everywhere in them, so it's left out of scoring."""
+    place's name only picks that article: it's everywhere in it, so it's left out of scoring
+    passages from that article. In other articles it still counts: "Kansai airport" must
+    pick the Kansai section of the Osaka article, not the one about Itami airport."""
     q = keywords(question)
     if not cands:
         return []
-    place_words = {stem(w) for title in places for w in words(re.sub(r"[(].*?[)]", "", title))}
-    if any(t not in place_words for t in q):
-        q = [t for t in q if t not in place_words]
+
+    def title_words(title):
+        return {stem(w) for w in words(re.sub(r"[(].*?[)]", "", title))}
+    own = {t: title_words(t) for t in places}
     wanted = intents(question)
     docs = [Counter(stem(w) for w in words(c["text"])) for c in cands]
     lens = [sum(d.values()) for d in docs]
@@ -166,7 +169,10 @@ def score_passages(cands, question, k1=1.4, b=0.75, places=()):
     scored = []
     for c, d, ln in zip(cands, docs, lens):
         s = 0.0
-        for t in set(q):
+        terms = set(q)
+        if c["place"] and c["title"] in own and terms - own[c["title"]]:
+            terms -= own[c["title"]]
+        for t in terms:
             if t not in d:
                 continue
             idf = math.log(1 + (n - df[t] + 0.5) / (df[t] + 0.5))
@@ -256,8 +262,6 @@ def prompt(question, picked):
 
 
 NUM_RE = re.compile(r"\d+(?:[.,:]\d+)*")
-
-
 def check_answer(answer, sources, picked):
     """Deterministic guard: the model's answer must stay inside the passages.
     Returns (cleaned answer, sources) or raises ValueError(reason)."""
