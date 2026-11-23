@@ -38,7 +38,7 @@ or the session scratchpad: Docker can't see Git Bash's `/tmp`.
 
 Push a `vX.Y.Z` tag. CI tests, then publishes `ghcr.io/jessewolcott/airplanemode-guide:X.Y.Z`
 (arm64 + amd64). Then add or bump it in `../airplanemode/compose.yaml`.
-**Ask Jesse before pushing a release tag.** Repo: github.com/jessewolcott/airplanemode-guide.
+**Ask Jesse before pushing a release tag.** Released: 0.1.0, 0.1.1 (home button). Repo: github.com/jessewolcott/airplanemode-guide.
 
 ## Not verified yet
 
