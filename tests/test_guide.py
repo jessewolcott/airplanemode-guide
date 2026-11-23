@@ -308,6 +308,43 @@ def test_answer_guards():
     assert s["rejected_by"].get("number not in passages") and s["rejected_by"].get("not grounded"), s
 
 
+def test_honest_not_covered():
+    """Gemma 4 E2B says so when the passages don't answer: that's a right answer, not a rejection
+    (platform decision 0020). Wrong answers are still rejected."""
+    d = ask("What should I eat in Lisbon?")
+    llm.reply = {"answer": "The guide does not contain information about the WiFi password at the Hilton in Berlin.",
+                 "sources": []}
+    a = ok(c.post("/api/answer", json={"id": d["id"]}))
+    assert a["status"] == "not_covered" and "Hilton" not in a["detail"], a   # the model's words aren't shown
+    llm.reply = {"answer": "Something else entirely, never asked for.", "sources": [1]}
+    assert ok(c.post("/api/answer", json={"id": d["id"]}))["status"] == "not_covered", "cached like an answer"
+    assert ok(c.get("/api/stats"))["answers"]["not_covered"] == 1
+    picked = d["passages"]
+    for honest in ("The guide doesn't cover this question, so check the passages below for nearby advice.",
+                   "There is no information about tipping waiters here, sorry about that."):
+        try:
+            guide.asking.check_answer(honest, [], picked)
+            raise AssertionError("ungrounded honest answer should raise NotCovered")
+        except guide.asking.NotCovered:
+            pass
+    # a wrong answer stays rejected, even with an honest-sounding clause tacked on
+    for wrong in ("Visitors should definitely sample spaghetti carbonara, gelato, pizza margherita and tiramisu.",
+                  "A pastel de nata costs 4.50 euro at the market.",
+                  "The guide doesn't mention prices, but a pastel de nata costs 4.50 euro."):
+        try:
+            guide.asking.check_answer(wrong, [1], picked)
+            raise AssertionError(f"should be rejected: {wrong}")
+        except guide.asking.NotCovered:
+            if "4.50" not in wrong or "guide" not in wrong:
+                raise AssertionError(f"wrong answer passed as not covered: {wrong}")
+        except ValueError:
+            pass
+    # an honest answer that is also grounded is shown like any other answer
+    text, _ = guide.asking.check_answer("The guide does not say when Cervejaria Ramiro is open, only that its garlic prawns and clams are famous.",
+                                        [1], picked)
+    assert "Ramiro" in text
+
+
 def test_answer_busy():
     d = ask("What should I eat in Lisbon?")
 

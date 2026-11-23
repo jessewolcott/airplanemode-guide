@@ -1,0 +1,1208 @@
+[
+ {
+  "question": "How do I get from Kansai airport to Osaka city centre?",
+  "covered": false,
+  "right_any": [],
+  "wrong": [
+   "itami",
+   "monorail",
+   "hotarugaike",
+   "umeda",
+   "limousine",
+   "shin-osaka",
+   "midosuji"
+  ],
+  "note": "No passage says how to get from Kansai airport into Osaka; the Itami passages are a trap.",
+  "articles": [
+   "Kansai",
+   "Osaka",
+   "Osaka/Bay Area"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Osaka",
+    "title": "Osaka",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "Kansai International Airport (KIX IATA) is the main international gateway to Osaka (Metropolitan area airport codes: OSA IATA). Also, Kobe Airport (UKB IATA) is nearby and easily reachable by boat from Kansai Airport.",
+    "place": true,
+    "score": 16.76
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Osaka",
+    "title": "Osaka",
+    "section": "Get in › Itami Airport",
+    "anchor": "Itami_Airport",
+    "text": "🌍 Osaka International Airport (also known as Itami Airport, ITM IATA). This was Osaka's main airport before the opening of Kansai, where most domestic flights arrive. Despite its name, it no longer serves international flights. The name is surely confusing; Itami is a city in adjacent Hyogo Prefecture. Only the airport's South Terminal is in Osaka.",
+    "place": true,
+    "score": 16.49
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kansai",
+    "title": "Kansai",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "There are three major airports in the Kansai Metropolitan Area. The main international hub is Kansai International Airport (KIX IATA), on an artificial island south of Osaka. The primary domestic airport is Osaka's Itami Airport (ITM IATA). Kobe Airport (UKB IATA), on another artificial island to the south of Kobe, also serves most major Japanese cities and a limited selection of international flights to greater China and Korea.",
+    "place": true,
+    "score": 15.11
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Osaka",
+    "title": "Osaka",
+    "section": "Get in › Itami Airport",
+    "anchor": "Itami_Airport",
+    "text": "By monorail – The Osaka Monorail serves the airport, but it doesn't connect to the city center at all, instead tracing an arc around the northern suburbs. To get to Umeda, the fastest option is to take the monorail a single stop to Hotarugaike, then transfer to the Hankyu Takarazuka Line (¥420 total). For destinations on the Midosuji subway line, including Shin-Osaka for Shinkansen services, transfer at Senri-Chuo. By bus – A more convenient option for most are the Airport Limousine Buses, which run frequently from Itami to various locations within Osaka and elsewhere in the region (including Kansai Airport), with fares starting around ¥500-600.",
+    "place": true,
+    "score": 14.12
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Osaka",
+    "title": "Osaka",
+    "section": "Get around",
+    "anchor": "Get_around",
+    "text": "Unlimited Kintetsu Rail Pass (Purchase at the Kansai Airport Agency Travel Desk in Kansai International Airport.). This pass is good for unlimited travel within the Kansai region for up to 5 consecutive days. The Kansai region covers Kyoto, Nara, Nagoya, Mie, and more. ¥1800/3000/4700 for 1/2/5 days. Subway and bus one-day Passes. The \"Enjoy Eco Card\" (adults ¥820) offers unlimited one-day travel on all subways and buses, and includes about 30 discounts around town. \"Osaka Rakuyu Pass\" (大阪楽遊パス, ¥2400/\\3000 for 1/2 days) allows entrance to more than 25 tourist spots.",
+    "place": true,
+    "score": 13.63
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Osaka",
+    "title": "Osaka",
+    "section": "Get in › By train",
+    "anchor": "By_train",
+    "text": "Tokaido and Sanyo Shinkansen (新幹線) trains arrive at Shin-Osaka station, to the north of the city center. From Shin-Osaka, you can connect to the city center by using the Midosuji subway line, or connect to the local JR network for other destinations. If you are on a JR Pass, Osaka Station in the city centre is connected to Shin-Osaka via the JR Kyoto Line.",
+    "place": true,
+    "score": 13.01
+   }
+  ]
+ },
+ {
+  "question": "What is the best way to get around Lisbon?",
+  "covered": true,
+  "right_any": [
+   "metro",
+   "tram",
+   "bus",
+   "walk"
+  ],
+  "wrong": [],
+  "articles": [
+   "Lisbon",
+   "Greater Lisbon",
+   "Lisbon/Bairro Alto"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get around › By public transport",
+    "anchor": "By_public_transport",
+    "text": "Lisbon has a very efficient public transport network that covers the entire city in addition to the surrounding areas. It consists of a bus and tram network operated by Carris, the separately-run Lisbon Metro underground rail, as well as commuter trains and ferries which connect Lisbon to its neighbouring suburbs. Additionally, Carris operates three unique funiculars and one public elevator that function as parts of the public transportation system.",
+    "place": true,
+    "score": 5.94
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get around › Bus",
+    "anchor": "Bus",
+    "text": "Hop-On, Hop-Off Tours are also a good option to get to know Lisbon. Carristur is operating with the brand Yellow Bus Sightseeing Tours and have tours in double-decker buses and old tramcars.",
+    "place": true,
+    "score": 5.55
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get around › By foot",
+    "anchor": "By_foot",
+    "text": "If your accommodation is in the center of the city, walking is a great alternative. Many of the attractions of the city, such as the Castelo and the Alfama and Bairro Alto districts, are within easy walking distance of the Baixa. Central Lisbon is very intimate and walking is very nice way to get around. However, the city is very hilly, a constant up and down everywhere, and streets and sidewalks are largely covered in cobblestone (some slippery when wet). For visitors with mobility issues, central Lisbon can be challenging.",
+    "place": true,
+    "score": 5.54
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get in › By bus",
+    "anchor": "By_bus",
+    "text": "All nearby cities and most major cities in Portugal have direct buses to Lisbon. The main bus terminal is at 🌍 Sete Rios (Metro: Jardim Zoológico). The main operator for long-haul buses is Rede Nacional de Expressos.",
+    "place": true,
+    "score": 5.5
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get around › Fares and tickets",
+    "anchor": "Fares_and_tickets",
+    "text": "If you plan to be in Lisbon for an extended time (1 week and more), you can purchase an unlimited pass, called Navegante Municipal, that covers buses, metro, and funiculars. It takes 10 days, or if you need it quicker you can pay an extra €5 for next-day delivery at the Carris station in Santo Amaro or at the subway stations in Marques de Pombal, Alameda and Campo Grande. The base price is €7 (Jan 2021) for a hard plastic Lisboa Viva card, plus €30 (Oct 2022) for a one-month unlimited pass in the limits of the city of Lisbon.",
+    "place": true,
+    "score": 5.48
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get around › By bicycle",
+    "anchor": "By_bicycle_2",
+    "text": "Just outside of Lisbon, you can take a free bike (but often in poor condition and limited offer) on trains or ferries along the coast from Estoril towards the beautiful beach of Guincho, reach Sintra, Cascais or Costa da Caparica. If travelling from Lisbon (and back) you should consider renting a bike there as there are no restrictions, nor additional charges, on travelling with bicycles on commuting trains. If you take a bicycle in public transportation: Metro: During working days you are allowed to carry bicycles in the metro only after 20:00. On weekends, it's allowed and it's free of charge.",
+    "place": true,
+    "score": 5.47
+   }
+  ]
+ },
+ {
+  "question": "Where can I eat cheaply in Lisbon?",
+  "covered": true,
+  "right_any": [
+   "family",
+   "pratos",
+   "castelo",
+   "inexpensive",
+   "not expensive",
+   "bairro alto"
+  ],
+  "wrong": [
+   "bilbao",
+   "guinea",
+   "malatesta",
+   "pintxos",
+   "pinchos",
+   "rice with fish"
+  ],
+  "articles": [
+   "Lisbon",
+   "Guinea-Bissau",
+   "Bilbao"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Guinea-Bissau",
+    "title": "Guinea-Bissau",
+    "section": "Eat",
+    "anchor": "Eat",
+    "text": "Most Guineans eat rice with fish, because the country is rich in fish, and rice (homegrown or imported from Thailand) is relatively cheap. The more costly meals contain beef, goat, chicken or pork. Meals are also made with palm oil and peanut sauce and vegetables. Guineans also eat wild game (deer, monkey, beaver etc.) but these animals are endangered and so it is not recommended to support this. Guineans are known for their warm-heartedness and so you will always be asked to come eat with a group of people (it is common to eat from a large bowl)... \"bin kume, no kume\".",
+    "place": false,
+    "score": 9.76
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bilbao",
+    "title": "Bilbao",
+    "section": "Eat › Pintxos",
+    "anchor": "Pintxos",
+    "text": "🌍 Malatesta (Malatesta Kultur Lubakia), Goienkale/Somera 10, Bilbao, ☏ +34 944164309. From 11:00 to 22:30, Fri and Sat until 02:00. Mon closed for rest. A place where you can have a drink, snack on pinchos and eat in the heart of Bilbao's Siete Calles. Vegetarian and vegan options. There is always an exhibition on, and cultural events are held here. (updated Sep 2022)",
+    "place": false,
+    "score": 7.09
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Eat",
+    "anchor": "Eat",
+    "text": "Portuguese dining rituals tend to follow the Mediterranean siesta body clock. Most restaurants are very small, family-run and generally inexpensive. Some of them have a sheet on the door with the pratos do dia (dishes of the day) written on it – these dishes are usually cheaper and fresher than the rest of menu there, and unless you're looking for something specific, they're the right choice. During the dinner the waiter will probably bring you some unrequested starter dishes (called couvert); as those are not free, don't feel obliged to touch them and they will not be charged on your bill (but check it!).",
+    "place": true,
+    "score": 4.0
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Eat",
+    "anchor": "Eat",
+    "text": "Traditional Portuguese restaurants are in Bairro Alto, scattered abundantly through its quirky narrow streets, and for Portuguese traditional cuisine at its finest, head to the area of Chiado. Tour groups primarily feel at home in Alfama. Tourist traps with laminated menus and meal deals are mostly concentrated in the Baixa area; one exception to this is the Rua das Portas de Santo Antão, a 'seafood strip' northeast from and parallel to Praça dos Restauradores.",
+    "place": true,
+    "score": 4.0
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Eat",
+    "anchor": "Eat",
+    "text": "If you feel like eating with the local people, try the Castelo neighborhood, the smaller family run places serve a fixed daily menu and are not expensive, getting up there by foot will open an appetite, or else go in the elétrico. For a familiar taste at one of the many chain eateries, head to Doca de Santo Amaro (train/tram 15 station Alcantara-Mar) and Parque das Nações (metro Oriental). All the culinary and clubbing kudos is right now concentrated in Doca de Jardim de Tabaco (piece of river waterfront right under Castelo de Sao Jorge). Quality dishes for a high price are in well-to-do Lapa.",
+    "place": true,
+    "score": 4.0
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Eat",
+    "anchor": "Eat",
+    "text": "The Pastel De Nata is one of Portugal's most well known foods, with this delightful custard egg tart best found in Belem.",
+    "place": true,
+    "score": 4.0
+   }
+  ]
+ },
+ {
+  "question": "How do I get from Heathrow airport to central London?",
+  "covered": true,
+  "right_any": [
+   "heathrow express",
+   "elizabeth",
+   "tube",
+   "piccadilly"
+  ],
+  "wrong": [
+   "luton",
+   "southend",
+   "liverpool street"
+  ],
+  "articles": [
+   "Heathrow Airport",
+   "London",
+   "London/West"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "London",
+    "title": "London",
+    "section": "Get in › London terminals",
+    "anchor": "London_terminals",
+    "text": "There are several major National Rail () stations in London. Clockwise from Paddington, these are: 🌍 London Paddington, in Paddington. Services:Great Western Railway from the South West and South Wales, including Cornwall, Devon, Bristol, Bath, Cardiff, Swansea and Oxford. Change at Maidenhead from Windsor and Eton Central. Also Night Riviera overnight trains from Cornwall and Devon.Heathrow Express from Heathrow Airport ().Elizabeth Line from Reading, Maidenhead, Heathrow Airport (), Ealing, the City, Canary Wharf and Essex.Connections at London Paddington are: BAK CEN DIS H&C ELI (updated Aug 2024)",
+    "place": true,
+    "score": 16.61
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "London",
+    "title": "London",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "If you arrive into a London airport and must catch a connecting flight from another airport, leave plenty of time to travel through London. This can be quite time consuming and you may need to catch two or more trains. 🌍 London Heathrow Airport (LHR IATA). Heathrow is the main airport for London, and the second busiest in the world in terms of international passenger traffic. (updated Jan 2024)",
+    "place": true,
+    "score": 15.17
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "London",
+    "title": "London",
+    "section": "Get around › By train",
+    "anchor": "By_train_2",
+    "text": "Similarly, while the journey from Paddington station to Heathrow Airport by Elizabeth Line will take around 10-15 minutes longer than by Heathrow Express, the walk-up fare will be twice as cheap (and even cheaper on the Tube, though the journey takes considerably longer), so it's often only worth the premium when you're in a hurry. Oyster cards are only valid to Heathrow when travelling by Tube, Heathrow Express, or the Elizabeth Line, to Gatwick by National Rail (including Gatwick Express), and to City by DLR. To all other airports they are not valid.",
+    "place": true,
+    "score": 14.3
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "London",
+    "title": "London",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "🌍 London Southend Airport (SEN IATA). There are flights from a few European destinations including Paris and Amsterdam. EasyJet operates most flights into London Southend Airport. Journeys into central London can take more than an hour. There is a railway station at Southend Airport, but you cannot use \"touch in, touch out\" There are few bus links with London. (updated Aug 2026)",
+    "place": true,
+    "score": 12.99
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "London",
+    "title": "London",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "🌍 London Luton Airport (LTN IATA). Luton Airport is around 30 miles from London. You can fly into Luton from a large number of European destinations, particularly smaller cities in southern and eastern Europe. Airlines include easyJet, Ryanair and Wizz Air. For public transport to central Londoni, it's a choice between a train (shuttle metro train to Luton Airport Parkway then train to London St Pancras), or a bus from the airport to London Victoria. (updated Jan 2024)",
+    "place": true,
+    "score": 12.89
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "London",
+    "title": "London",
+    "section": "Get in › London terminals",
+    "anchor": "London_terminals",
+    "text": "🌍 London Liverpool Street, in the City of London. Services:Greater Anglia from the East of England including Hertford, Cambridge, Colchester, Southend-on-Sea, Southend Airport (), Harwich with ferries from Netherlands (), and Norwich. Also Stansted Express from London Stansted Airport ().c2c from South Essex including Southend-on-Sea.Elizabeth Line from Reading, Heathrow Airport (), London Paddington, Canary Wharf and Essex.London Overground from North London, North East London and Hertfordshire.Connections at London Liverpool Street are: CEN CIR H&C MET ELI OGD (updated Aug 2024)",
+    "place": true,
+    "score": 12.78
+   }
+  ]
+ },
+ {
+  "question": "Is the tap water safe to drink in Mexico City?",
+  "covered": true,
+  "right_any": [
+   "not recommended",
+   "bottled",
+   "purified"
+  ],
+  "wrong": [
+   "safe to drink tap"
+  ],
+  "articles": [
+   "Mexico City",
+   "Mexico",
+   "Quintana Roo"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Mexico",
+    "title": "Mexico",
+    "section": "Stay healthy",
+    "anchor": "Stay_healthy",
+    "text": "Some parts of Mexico are known for travelers' diarrhea, often called \"Montezuma's Revenge\" (Venganza de Moctezuma). The reason for this is not so much the spicy food but the contamination of the water supply in some of the poorer zones in Mexico. In most of the small towns that are less industrialized, only the poorest Mexicans will drink tap water. The best policy is to only drink bottled or purified water, both of which are readily available. Be sure to specify bottled water in restaurants and avoid ice (which is often not made from purified water).",
+    "place": true,
+    "score": 29.37
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Mexico",
+    "title": "Mexico",
+    "section": "Drink",
+    "anchor": "Drink",
+    "text": "Tap water is potable, but generally not recommended for drinking. Hotels usually give guests one (large) bottle of drinking water per room per night. Bottled water is also readily available in supermarkets and at tourist attractions. Tequila, distilled from Agave (a specific type of cactus) Pulque, ferment made from Maguey Mezcal, similar to tequila but distilled from Maguey Raicilla, a type of mezcal made in Jalisco Pox, whisky meets rum, distilled from grains and cane sugar, made in Chiapas Tepache, ferment made from pineapple Tuba, made from coconut palm tree",
+    "place": true,
+    "score": 20.33
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Mexico",
+    "title": "Mexico",
+    "section": "Stay healthy",
+    "anchor": "Stay_healthy",
+    "text": "Just like in the US, in most major Mexican cities the water is purified at the cities' water company. In most restaurants in these poor zones, the only water served comes from large jugs of purified water. If you get sick, visit your local clinic as soon as possible. There is medicine available that will counter the bacteria.",
+    "place": true,
+    "score": 16.96
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Mexico_City",
+    "title": "Mexico City",
+    "section": "Drink",
+    "anchor": "Drink",
+    "text": "The typical Mexican place to go to drink is the cantina, a bar where food is usually free, and you pay for drinks (exact policies and minimums vary). Cantinas serve a wide range of Mexican and foreign drinks, with prices usually reasonable compared to prices in the US, and you'll be continually served various Mexican foods, such as tacos (you should ask for 'Botana'). If your tolerance for Mexican music (mariachi or otherwise) and lots of noise is low however, this may not be your kind of place. Cantinas are open moderately late, usually past midnight at the very least.",
+    "place": true,
+    "score": 13.28
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Mexico",
+    "title": "Mexico",
+    "section": "Stay safe › Stingray stings",
+    "anchor": "Stingray_stings",
+    "text": "Choose a place with hot water if you can, because the heat deactivates the poison.",
+    "place": true,
+    "score": 12.77
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Mexico",
+    "title": "Mexico",
+    "section": "Stay safe › Beach",
+    "anchor": "Beach",
+    "text": "In Mexico the actions have to be taken for safety is similar to everywhere. See water safety.",
+    "place": true,
+    "score": 12.62
+   }
+  ]
+ },
+ {
+  "question": "What are the main sights to see in Kyoto?",
+  "covered": true,
+  "right_any": [
+   "tenry",
+   "arashiyama",
+   "bamboo",
+   "temple",
+   "villa"
+  ],
+  "wrong": [
+   "uji"
+  ],
+  "articles": [
+   "Kyoto",
+   "Uji",
+   "Kyoto/Arashiyama"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kyoto",
+    "title": "Kyoto",
+    "section": "See",
+    "anchor": "See",
+    "text": "Individual listings can be found in Kyoto's district articles Kyoto offers an incredible number of attractions for tourists, and visitors will probably need to plan an itinerary in advance in order to visit as many as possible. Japan National Tourist Organization's self-guided \"Kyoto Walks\" pamphlet enables first time visitors to tour the city with ease and with minimum fuss by providing bus numbers, names of bus stops and clearly marked walking routes. There are a variety of self-guided walks in different districts to sample Kyoto's various sites. If you see the browser's dialog box popping up, just click on it till the entire PDF document opens.",
+    "place": true,
+    "score": 7.26
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kyoto",
+    "title": "Kyoto",
+    "section": "Get around › By bus",
+    "anchor": "By_bus_3",
+    "text": "The municipal transport company publishes a very useful leaflet called Bus Navi. It contains a route map for the bus lines to most sights and information. You can pick it up at the information center in front of the main station.",
+    "place": true,
+    "score": 6.71
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Uji",
+    "title": "Uji",
+    "section": "See",
+    "anchor": "See",
+    "text": "Since Uji is a place full of tradition, there are many small temples to be found on both sides of the river. There are excellent explanatory displays in both English and Japanese in front of most of the major and minor sights.",
+    "place": false,
+    "score": 6.27
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kyoto/Arashiyama",
+    "title": "Kyoto/Arashiyama",
+    "section": "See",
+    "anchor": "See",
+    "text": "🌍 Tenryū-ji (天龍寺), 68 Saga Tenryū-ji Susukinobaba-chō (Main entrance near the busy Togetsukyō Bridge intersection), ☏ +81 75-881-1235. Mar-Oct: daily 08:30-17:30; Nov-Feb: daily 08:30-17:00. One of the city's UNESCO World Heritage Sites and the main temple of the Rinzai sect of Buddhism in Kyoto; it's also considered one of Kyoto's Five Great Zen Temples. Tenryu-ji was founded in 1334, but the current buildings all date from the last century: pleasant, but unremarkable. However, there is a lovely garden and pond, designed by the Zen master Musō Soseki, that is worth a look - and well worth taking a leisurely stroll around.",
+    "place": false,
+    "score": 6.25
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kyoto/Arashiyama",
+    "title": "Kyoto/Arashiyama",
+    "section": "See",
+    "anchor": "See",
+    "text": "Just take the walkway route just south of the railway tracks, which begins at the upper end of the main road leading north from the Randen tram terminal. Free. (updated Nov 2023)",
+    "place": false,
+    "score": 5.93
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kyoto/Arashiyama",
+    "title": "Kyoto/Arashiyama",
+    "section": "See",
+    "anchor": "See",
+    "text": "After your walk, head out the back way and through the splendid bamboo forest to reach the Ōkōchi Sansō villa (see below). ¥600 (garden + temple), or ¥500 (garden only).",
+    "place": false,
+    "score": 5.86
+   }
+  ]
+ },
+ {
+  "question": "How much does a metro ticket cost in Paris?",
+  "covered": false,
+  "right_any": [],
+  "wrong": [
+   "14"
+  ],
+  "note": "The passages name the tickets but give no metro price; the 14 euro is the Airports Ticket.",
+  "articles": [
+   "Paris",
+   "Paris Orly Airport",
+   "Paris/1st arrondissement"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Paris",
+    "title": "Paris",
+    "section": "Get around › By Métro",
+    "anchor": "By_Métro",
+    "text": "Some larger stations have secondary entrances without ticket windows or ticket machines. These are labelled voyageurs munis de billets (passengers with tickets).",
+    "place": true,
+    "score": 12.07
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Paris",
+    "title": "Paris",
+    "section": "Get around › Fares",
+    "anchor": "Fares",
+    "text": "Île-de-France Mobilités app, Bonjour RATP app, SNCF Connect app, Apple Wallet app, Google Wallet app, Samsung Wallet app Métro-Train-RER Ticket, Bus-Tram Ticket, Airports Ticket, Day Pass, Week Pass, Month Pass, Paris Visite Pass Ticket Windows, Ticket Machines Métro-Train-RER Ticket, Bus-Tram Ticket, Airports Ticket, Day Pass, Paris Visite Pass Day Pass, Week Pass, Month Pass The following fares are available to load: Métro, RER, Transilien, Funicular Valid for 120 minutes, Not valid to/from/between airports, Includes transfers Valid for 90 minutes, Valid to/from/between airports, Includes transfers Métro, RER, Transilien, Orlyval Valid for 120 minutes, Valid to/from/between airports, Includes transfers Métro, RER, Transilien, Funicular, Tram, Bus, Cable",
+    "place": true,
+    "score": 11.95
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Paris",
+    "title": "Paris",
+    "section": "Get around › Fares",
+    "anchor": "Fares",
+    "text": "Ticket inspectors roam the network and show no mercy to tourists pleading ignorance. Travelling without a ticket will result in you being cited and forced to pay a fine on the spot. Inspections usually take place behind the turnstiles at major Métro stations or during transfers.",
+    "place": true,
+    "score": 10.57
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Paris",
+    "title": "Paris",
+    "section": "Get in › By bus",
+    "anchor": "By_bus",
+    "text": "🌍 Regiojet, bus stop along Rue du Faubourg near Château-Landon Metro stop (Next Gare de l'Est), ☏ +420 222 222 221, info@regiojet.com. A Czech company, offers connections to Paris from Prague and via Prague from Berlin and other cities. Good service and economical. (updated Jul 2018)",
+    "place": true,
+    "score": 10.36
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Paris_Orly_Airport",
+    "title": "Paris Orly Airport",
+    "section": "Ground transportation › By train",
+    "anchor": "By_train",
+    "text": "A full-fare single \"Airports Ticket\" costs €14 and is valid for either option. The ticket allows you to transfer to other Metro, RER or Transilien lines throughout Paris. Paris Visite Tickets are valid for either option. Week and Month Tickets are valid on Metro line 14 only. Day Tickets are not valid for either option.",
+    "place": false,
+    "score": 9.29
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Paris",
+    "title": "Paris",
+    "section": "Get around › By public transport",
+    "anchor": "By_public_transport",
+    "text": "RATP operates the Métro, trams, buses, and about half of the RER A and B. SNCF operates the rest of the RER, as well as the Transilien. Both companies take the same tickets, so the difference is of little interest for most people except in case of strikes. For example, RATP may strike without SNCF doing so or the other way around.",
+    "place": true,
+    "score": 8.43
+   }
+  ]
+ },
+ {
+  "question": "How do I get from Schiphol airport to Amsterdam city centre?",
+  "covered": false,
+  "right_any": [
+   "flixbus"
+  ],
+  "wrong": [
+   "sternet",
+   "197",
+   "keukenhof",
+   "bus 58",
+   "lisse",
+   "metro 52"
+  ],
+  "note": "No passage gives the train; Flixbus stopping at both is the only real link.",
+  "articles": [
+   "Schiphol Airport",
+   "Amsterdam",
+   "Lisse"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Amsterdam",
+    "title": "Amsterdam",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "🌍 Amsterdam Airport Schiphol (AMS IATA) (15 km (9.3 mi) southwest of the city.). This airport is among the five busiest in Europe for passenger traffic, serving over 66 million passengers in 2024. KLM is the largest carrier operating at Schiphol and offers flights to many major cities around the world. British Airways offers up to 16 flights per day to 2 London Airports; Heathrow and London City. Transavia, Vueling, TUIfly, Easyjet, and other low-cost carriers serve Schiphol, offering service to many cities in Europe.",
+    "place": true,
+    "score": 17.05
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Amsterdam",
+    "title": "Amsterdam",
+    "section": "Get in › By bus",
+    "anchor": "By_bus",
+    "text": "There are dozens of daily international bus services. Nearby international destinations in Germany, Belgium and France (Paris and Lille) and London are served at high frequency. Their stops and stations are located at the Amsterdam Sloterdijk Station, the airport and/or another locations: Flixbus, (bus stops) Amsterdam Sloterdijk, Amsterdam Schiphol Airport, Amsterdam Bijlmer ArenA & Amsterdam Centraal. German low-cost bus company offering connections to many German cities such as Berlin, Cologne and Munich and other European cities as well. Also offering domestic service within the Netherlands. (updated Nov 2025)",
+    "place": true,
+    "score": 13.62
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Amsterdam",
+    "title": "Amsterdam",
+    "section": "Get around › By car",
+    "anchor": "By_car_2",
+    "text": "You can park for free in some parts of Amsterdam outside the city centre though this is slowly changing. Parking is still free in some areas in Noord, and you can take metro 52 from Noord or Noorderpark to the city centre. Another option is to park your car outside the city centre at a Park and Ride facility, as described in the Get in section. Popular car rental chains operate in a smaller capacity in Amsterdam, including Avis and Budget. Free2move has 400 all-electric cars available within and around the city.",
+    "place": true,
+    "score": 11.71
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Amsterdam",
+    "title": "Amsterdam",
+    "section": "Get around › Season tickets",
+    "anchor": "Season_tickets",
+    "text": "These passes can be purchased at tourist offices (at Schiphol Airport and just outside Amsterdam Centraal), many hotels and GVB ticket offices. Additionally, a one-day pass can be purchased from the conductor on a tram (but not on a bus).",
+    "place": true,
+    "score": 11.61
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisse",
+    "title": "Lisse",
+    "section": "Get in › By bus",
+    "anchor": "By_bus",
+    "text": "From Amsterdam centre: From the Leidseplein/Museumplein you can take the red Sternet bus 197 to Schiphol Airport (buses run 5-6 times per hour). At Schiphol Airport you have to change to bus 58. From Schiphol Airport: Bus 58 runs on Monday till Friday 4 times an hour and in weekends 8 times an hour. The bus leaves Schiphol from platform B1/B3 at the Schiphol Plaza bus station. The journey to Keukenhof takes 35 minutes. The last bus back to Schiphol leaves at 19:22.",
+    "place": false,
+    "score": 11.31
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Amsterdam",
+    "title": "Amsterdam",
+    "section": "Get in › By bus",
+    "anchor": "By_bus",
+    "text": "Twiliner, (bus stop) Amsterdam Sloterdijk, service@twiliner.com. Buses take 12 hr 30 min from Zurich via Basel, Luxembourg (city), Brussels and Rotterdam. Their seats fold flat into a bunk: there's some disturbance from bumps in the road and noise at intermediate stops, but no worse than in a railway sleeping car, for similar comfort and half the price. (updated Jan 2026) There are only a few long-distance national bus services in the Netherlands, and apparently none to Amsterdam Centraal. Bus 300 connects Haarlem train station with Hoofddorp, Schiphol Airport, Amstelveen and Amsterdam Bijlmer ArenA.",
+    "place": true,
+    "score": 11.2
+   }
+  ]
+ },
+ {
+  "question": "Do people tip in Japan?",
+  "covered": true,
+  "right_any": [
+   "not a part",
+   "not part",
+   "uncomfortable",
+   "not expected",
+   "offended",
+   "no tipping",
+   "don't tip",
+   "do not tip"
+  ],
+  "wrong": [
+   "customary to tip",
+   "expected to tip"
+  ],
+  "articles": [
+   "Japan",
+   "Ryokan",
+   "Golden Week in Japan"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Buy › Tipping",
+    "anchor": "Tipping",
+    "text": "Occasionally the hotel or inn will leave a small gratuity envelope for you to tip the maids, though it is completely optional. Never leave a cash tip on a table or hotel bed, because the Japanese consider it impolite if it is not concealed in an envelope. Exceptions to the no-tipping culture are high-end ryokan (see § Sleep) and interpreters or tour guides.",
+    "place": true,
+    "score": 15.27
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Buy › Tipping",
+    "anchor": "Tipping",
+    "text": "Tipping is not a part of Japanese culture. Japanese people are uncomfortable with being tipped and are likely to be confused, amused or possibly even offended if tipped. The Japanese pride themselves on the service given to customers, and a further financial incentive is unnecessary. If you leave a tip in a restaurant, the staff will probably come running after you to return the money you 'forgot'. Many Westernised hotels and restaurants may add a 10% service charge, and family restaurants may add a 10% late-night charge after midnight.",
+    "place": true,
+    "score": 14.14
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Do › Outdoors",
+    "anchor": "Outdoors",
+    "text": "Around 300,000 people every year climb Mount Fuji, a mountain famous as an icon of Japan. On the most popular route, you will need to use your hands for support, but no actual climbing is required; you can easily climb Fuji with just adequate clothing, some basic gear (sunscreen, headlamp, etc.), and 1–2 days in your itinerary. It's easily doable if you're not too out of shape.",
+    "place": true,
+    "score": 7.59
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Do › Music",
+    "anchor": "Music",
+    "text": "Rather than doing general admission, tickets may be numbered to divide the audience into smaller groups which are admitted in order. Music festivals (ロック・フェスティバル rokku fesutibaru, shortened to ロックフェス rokku fesu or just フェス fesu) are also popular, drawing tens of thousands of people. Fuji Rock Festival is Japan's largest festival, and covers many genres. Rock In Japan Festival is the biggest festival where only Japanese artists are allowed to perform.",
+    "place": true,
+    "score": 7.53
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Do › Hot springs and public baths",
+    "anchor": "Hot_springs_and_public_baths",
+    "text": "Sentō (銭湯) are public bath houses found in any large city. Intended for people without their own home tub, they are typically quite utilitarian and are slowly dying out. Some, however, have gone upmarket and turned into \"spas\" (スパ supa), which are public baths for stressed-out salarymen, often with a capsule hotel (see § Sleep) bolted on the side. As you might expect, these come in varying degrees of legitimacy — beware any place advertising \"esthe\", \"health\", or \"soap\" — but most are surprisingly decent.",
+    "place": true,
+    "score": 7.33
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Do › Festivals",
+    "anchor": "Festivals",
+    "text": "Hakata Dontaku (博多どんたく) in Fukuoka (May 3–4) — Japan's largest festival, drawing over 2 million people during the Golden Week holidays Kanda (神田) in Tokyo (May, Sa-Su closest to May 15 in odd-numbered years) Hakata Gion Yamakasa (博多祇園山笠) in Fukuoka (July 1–15) — famous for racing one-ton floats Gion (祇園) in Kyoto (July, the whole month but particularly 14-17 and 21-24) Nebuta (ねぶた) in Aomori (August 2–7) Awa-Odori (阿波踊り) in Tokushima (August 12–15) — folk dance festival There are also several nationwide festivals: New Year's (正月 Shōgatsu) (December 31 - January 3)",
+    "place": true,
+    "score": 7.15
+   }
+  ]
+ },
+ {
+  "question": "How do I get from Changi Airport to the city in Singapore?",
+  "covered": true,
+  "right_any": [
+   "city hall",
+   "2.30",
+   "train",
+   "mrt",
+   "tanah merah"
+  ],
+  "wrong": [
+   "seletar",
+   "hougang",
+   "ferry"
+  ],
+  "articles": [
+   "Singapore Changi Airport",
+   "At the airport",
+   "Singapore"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Singapore",
+    "title": "Singapore",
+    "section": "Get in › Changi Airport",
+    "anchor": "Changi_Airport",
+    "text": "An adult fare to City Hall costs $2.30, with trains running from approximately 5:30 am (6 am on Sundays and public holidays) to 11:15 pm for connecting trains to the city at Tanah Merah (the actual last train departs just after midnight, but you won't be able to transfer to a city-bound train). See Singapore Changi Airport for the full scoop.",
+    "place": true,
+    "score": 16.71
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Singapore",
+    "title": "Singapore",
+    "section": "Get in › Changi Airport",
+    "anchor": "Changi_Airport",
+    "text": "Main article: Singapore Changi Airport 🌍MISSING WIKILINK Changi Airport (SIN IATA) is the main airport and serves all commercial jet flights. It regularly shows up in \"Best Airport\" rankings and is big, pleasant, and well-organised, with remarkably fast immigration and baggage distribution. The airport is split into four main terminals (T1, T2, T3 and T4). At landslide, there is also an indoor shopping mall, called Jewel Changi Airport, which is essentially an indoor park and features the famous Rain Vortex at the centre, which is a good place to hang out for a few hours before your flight.",
+    "place": true,
+    "score": 14.91
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Singapore",
+    "title": "Singapore",
+    "section": "Get in › Seletar Airport",
+    "anchor": "Seletar_Airport",
+    "text": "🌍 Seletar Airport (XSP IATA) serves all turboprop flights and general aviation. Completed in 1928 and first used for civil aviation in 1930, it was Singapore's first airport. The only commercial flights to Seletar are Firefly services from Kuala Lumpur's Subang Airport (a smaller airport closer to the city centre, not the main international airport of Kuala Lumpur) and Berjaya's \"scheduled charters\" to Redang. Bus 102 runs from Hougang MRT (North-East Line) directly to the airport, but most travellers opt for a taxi instead. A $3 surcharge applies for trips from the airport.",
+    "place": true,
+    "score": 12.41
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Singapore",
+    "title": "Singapore",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "In addition to the local airports, travellers from Malaysia or Indonesia can consider flying into Johor Bahru (JHB IATA), Batam (BTH IATA) or Tanjung Pinang (TNJ IATA) instead, as flights to those airports are usually cheaper than to Changi or Seletar. The downside is that you'll have to pass through customs and immigration twice, and there are no direct public transportation links between those airports and Singapore, meaning that you will have to arrange your own transportation. If you have a lot of time, flying to Kuala Lumpur (KUL IATA), which is served by more destinations than the aforementioned three airports, can also save you some money.",
+    "place": true,
+    "score": 11.57
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Singapore",
+    "title": "Singapore",
+    "section": "Get in › By boat",
+    "anchor": "By_boat",
+    "text": "If you are arriving on a weekday and hence taking the 35, check the destination carefully. The bus calls twice in its route at the ferry terminal and visitors must pre-register to enter the logistics park ALPS. A shuttle service also connects Tanah Merah Ferry Terminal with Changi Airport, costing $4 each way.",
+    "place": true,
+    "score": 11.56
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Singapore",
+    "title": "Singapore",
+    "section": "Get in › By boat",
+    "anchor": "By_boat",
+    "text": "Ferries link Singapore with the neighbouring Indonesian province of Riau Islands, and the Malaysian state of Johor. Singapore has two terminals that handle international ferries: 🌍 HarbourFront near Sentosa and 🌍 Tanah Merah near Changi Airport. HarbourFront Ferry Terminal is located inside HarbourFront Centre shopping mall, not to be confused with the adjoining VivoCity. Alight at HarbourFront MRT station.",
+    "place": true,
+    "score": 11.36
+   }
+  ]
+ },
+ {
+  "question": "Is Rio de Janeiro safe at night?",
+  "covered": true,
+  "right_any": [
+   "downtown",
+   "saara",
+   "copacabana",
+   "subway",
+   "after dark"
+  ],
+  "wrong": [],
+  "articles": [
+   "Rio de Janeiro",
+   "Rio de Janeiro/Zona Oeste",
+   "Rio de Janeiro/Centro"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Rio_de_Janeiro",
+    "title": "Rio de Janeiro",
+    "section": "Stay safe › Dangerous areas",
+    "anchor": "Dangerous_areas",
+    "text": "Avoid the downtown area, especially Saara (a large street shopping region in the city center), at night. Although the downtown is a relatively safe place during the day, after-dark all the people who work there have already gone home. If you are going to a theater or a show, do not wander in those streets by night. It is better to take a taxi directly from your hotel to your final destination and back rather than going around seeking for public transport. Go to the Ipanema beach, which is relatively safe at night as long as you don't stand out as an obvious tourist.",
+    "place": true,
+    "score": 16.33
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Rio_de_Janeiro",
+    "title": "Rio de Janeiro",
+    "section": "Stay safe",
+    "anchor": "Stay_safe",
+    "text": "The lines 1 (orange) and 4 (yellow) of subway (which cross Tijuca, the downtown area, the South Zone, and Barra da Tijuca) are very safe, so it is recommended to use them if you want to go from one place to another - these two lines are interconnected at General Osório station, in Ipanema. The line 2 (green) of the metro is not exactly dangerous, but also is not as safe as the other lines, since it crosses many neighborhoods of North Zone and passes near several slums along its way.",
+    "place": true,
+    "score": 10.51
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Rio_de_Janeiro",
+    "title": "Rio de Janeiro",
+    "section": "Stay safe › Dangerous areas",
+    "anchor": "Dangerous_areas",
+    "text": "On Sunday, most shops are closed and their security guards are absent, so the neighborhood Centro (downtown) is not safe in the daytime. Also, even the bigger streets in Copacabana are less safe after dark so the beach walk is probably the best option. In the morning, especially before the police arrive, if you are walking or jogging on, Copacabana should be considered unsafe. Even with people around, joggers are popular targets for mugging. If you plan on jogging make sure not to wear anything that may tempt a mugger (watches, iPhones, etc.) and if you can, wait until after 10AM.",
+    "place": true,
+    "score": 10.23
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Rio_de_Janeiro",
+    "title": "Rio de Janeiro",
+    "section": "Stay safe › Dangerous areas",
+    "anchor": "Dangerous_areas",
+    "text": "Buses on the South Zone are fairly safe as well, but they can be quite crowded. Inside a bus, being mugged is always a threat: less so but still possible in the South and tourist zones. Don't use a phone while sat next to an open window since it can get snatched from your hand. In the subway, it is very unlikely though, which is one extra point to the subway!",
+    "place": true,
+    "score": 9.0
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Rio_de_Janeiro",
+    "title": "Rio de Janeiro",
+    "section": "Stay safe › Dangerous areas",
+    "anchor": "Dangerous_areas",
+    "text": "The suburban rail is generally not useful for tourists. If you do take it, note that trains may not come all that frequently, especially on weekends and holidays, and they tend to be filled with hawkers selling various cheap goods and, worse, evangelical preachers. Although the trains themselves are generally safe, a lot of the stations aren't, such as Jacarezinho, Barros Filho, Costa Barros (on the Belford Roxo (purple) line), Parada de Lucas and Vigário Geral (on the Saracuruna (orange) line). There are many sections of the suburban rail system that cross favelas; under no circumstances take photographs on these sections.",
+    "place": true,
+    "score": 8.23
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Rio_de_Janeiro",
+    "title": "Rio de Janeiro",
+    "section": "Stay safe › Explosives",
+    "anchor": "Explosives",
+    "text": "At night, especially after traffic has died down, you may hear what sounds like fireworks and explosions. This is not as menacing as it sounds, though it is still indicative of somebody up to no good. These are often firecrackers set-off as signals in the favelas. It might mean that a drug shipment has arrived and is in-transit or that the police are making a raid into the favela. It is a signal to gang operatives who act as lookouts and surrogate police to be extra-vigilant. However, real shoot-outs may occur, especially on weekends.",
+    "place": true,
+    "score": 7.68
+   }
+  ]
+ },
+ {
+  "question": "When is the best time of year to visit Iceland?",
+  "covered": true,
+  "right_any": [
+   "summer"
+  ],
+  "wrong": [],
+  "articles": [
+   "Iceland",
+   "Þingvellir National Park",
+   "South Iceland"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Understand › People",
+    "anchor": "People",
+    "text": "Norse people were the first to settle Iceland in the 9th century AD. Tradition holds that the first permanent settler was Ingólfur Arnarson, a Norwegian Viking who made his home where Reykjavík now stands. It is thought that Irish monks had temporarily inhabited the island some years prior to this. Icelandic retains many features from Old Nordic at the time of first settlement and many Icelanders can retrace their lineage to one of the early settlers on at least one side.",
+    "place": true,
+    "score": 11.71
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Understand › Climate",
+    "anchor": "Climate",
+    "text": "There are 1900 active volcanoes on Earth, of which over 30 are in Iceland 1250°C is the top temperature lava reaches 75% of all volcanoes on Earth are on the Pacific Ring of Fire in the Pacific Ocean 99% of Iceland's surface is made up of volcanic rocks. The oldest rocks here are around 15 or 16 million years old 6 months is the amount of time that Iceland's Bárðarbunga volcano continuously erupted in 2015–2016, producing 85 km2 (33 sq mi) of lava",
+    "place": true,
+    "score": 11.53
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Understand › Time zone",
+    "anchor": "Time_zone",
+    "text": "Iceland uses GMT (UTC±0), the same time zone as the United Kingdom, Ireland, Portugal and parts of Spain. However, unlike those countries, Iceland does not observe Daylight Saving Time, making it the only country in Western Europe not to do so.",
+    "place": true,
+    "score": 10.74
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Understand",
+    "anchor": "Understand",
+    "text": "Because it is so close to the Arctic Circle, the amount of daylight varies dramatically by season. The sun sets briefly each night in June, but it doesn't get fully dark before it comes back up again. It is a beautiful sight and one definitely not to be missed, but it can make it hard to sleep. It is easy to lose track of time when the sun is still high in the sky at 23:00 (the time zone amplifies this: wall clock time is 1–1½ hr ahead of sun time). In the March and September equinoxes, days and nights are of about equal length, as elsewhere in the world.",
+    "place": true,
+    "score": 10.67
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Understand",
+    "anchor": "Understand",
+    "text": "Summer is definitely the best time to go, even though that time can be more crowded. Early or late winter, however, can be surprisingly good times to visit. In late January, daylight is from about 10:00 to 16:00, prices are lower than in the high season, and the snow-blanketed landscape is eerily beautiful. Some sites are, however, inaccessible in the winter. No matter when you go though, the weather is never hot, though Icelanders bemoan their glaciers shrinking due to climate change. Be prepared for rainy days in fall, and for it to be windy everywhere during any season.",
+    "place": true,
+    "score": 9.22
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Þingvellir_National_Park",
+    "title": "Þingvellir National Park",
+    "section": "Understand › Landscape",
+    "anchor": "Landscape",
+    "text": "Measurements suggest that the graben (the floor of the valley) has widened 70 m in the space of 10,000 years, and sunk by 40 m at the same time – the difference between the top of Almannagjá and the plains below.",
+    "place": false,
+    "score": 8.76
+   }
+  ]
+ },
+ {
+  "question": "What can I do in Reykjavik on a rainy day?",
+  "covered": true,
+  "right_any": [
+   "pool",
+   "sundh",
+   "swim"
+  ],
+  "wrong": [
+   "culture night",
+   "national day"
+  ],
+  "articles": [
+   "Reykjavík",
+   "Iceland",
+   "Route 1 (Iceland)"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Reykjavík",
+    "title": "Reykjavík",
+    "section": "Do › Festivals",
+    "anchor": "Festivals",
+    "text": "National Day (17. júní). It may come as a surprise, but the National Day celebrations on 17 June every year are probably the smallest of the three festivals mentioned here. Nonetheless, it is a public holiday day of festivities in the city where people (especially families with children) celebrate the date Iceland was declared a republic in 1944. The date was selected because it is the birthday of the Icelandic independence hero Jón Sigurðsson. The city also annually hosts a music festival and an international film festival, both take place over several days in the city centre.",
+    "place": true,
+    "score": 10.14
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Reykjavík",
+    "title": "Reykjavík",
+    "section": "Do › Festivals",
+    "anchor": "Festivals",
+    "text": "At least three times a year, Reykjavík comes out to celebrate. Culture Night (Menningarnótt). Third Sat of August. This is the biggest date in the cultural calendar of Reykjavík. What started out in 1996 as only an evening celebration today starts already in the morning with the Reykjavík Marathon. The day progresses with ever more cultural activities, most of them free, in central Reykjavík and culminates in several huge concerts and a fireworks show by the harbour. Attendance is usually around 100,000 or half of the population of the city.",
+    "place": true,
+    "score": 7.67
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Reykjavík",
+    "title": "Reykjavík",
+    "section": "Do › Geothermal swimming pools",
+    "anchor": "Geothermal_swimming_pools",
+    "text": "🌍 Sundhöllin, Baronsstígur, 101 Reykjavik (Located a few minutes from Hallgrimskirkja), ☏ +354 411 5350, sundholl@itr.is. Mon-Fri 06:30 - 21:00, Sat Sun 08:00 - 19:00. The city's oldest and only indoor pool (with outdoor hot-pots), located in the city centre. Has a more municipal feel than the other pools, but has a very central location.",
+    "place": true,
+    "score": 7.59
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Reykjavík",
+    "title": "Reykjavík",
+    "section": "Do › Geothermal swimming pools",
+    "anchor": "Geothermal_swimming_pools",
+    "text": "🌍 Vesturbæjarlaug, Hofsvallagata, 107 Reykjavik (Located a few minutes from Hotel Saga and the University of Iceland), ☏ +354 411 5150, vesturbaejarlaug@itr.is. Mon-Fri 06:30-22:00, Sat-Sun 08:00-20:00. The city's oldest outdoor pool. Located in a residential area. Of the pools on this list, this is the only one within a moderate walking distance of the city centre. 1380 ISK (adult). (updated Aug 2025)",
+    "place": true,
+    "score": 7.4
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Reykjavík",
+    "title": "Reykjavík",
+    "section": "Do › Geothermal swimming pools",
+    "anchor": "Geothermal_swimming_pools",
+    "text": "🌍 Árbæjarlaug, Fylkisvegur, ☏ +354 411 5200, arbaejarlaug@itr.is. Mon-Fri 06:30 - 22:00, Sat Sun summer: 08:00 - 22:00, winter: 08:00 - 20:30. A brand new complex on the outskirts of the city, it has nice views over the city centre and is a nice place to watch the sunset. There is an indoor and outdoor pool, a waterslide, several hot-pots and a steam bath. This is a favourite with families and is perhaps the nicest of the city's pools. Buses run here from central Reykjavik. 1255 kr. (updated Dec 2023)",
+    "place": true,
+    "score": 6.91
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Reykjavík",
+    "title": "Reykjavík",
+    "section": "Understand › Climate",
+    "anchor": "Climate",
+    "text": "The weather in Reykjavík is notoriously unpredictable. One minute the sun may be shining on a nice summers day, the next it may change into a windy, rainy autumn. Temperatures in Reykjavík are quite bland: they don't go very high in the summer, nor do they go much below zero during winter. It follows that the differences between seasons are relatively small compared to what people experience on either side of the Atlantic.",
+    "place": true,
+    "score": 6.79
+   }
+  ]
+ },
+ {
+  "question": "How do I get around Bangkok?",
+  "covered": true,
+  "right_any": [
+   "rail",
+   "river",
+   "skytrain",
+   "bts",
+   "boat",
+   "public transport"
+  ],
+  "wrong": [],
+  "articles": [
+   "Bangkok",
+   "Bangkok/Silom",
+   "Bangkok/Thonburi"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Get around",
+    "anchor": "Get_around",
+    "text": "Bangkok has a decent public transportation network by Southeast Asian standards, but much room for improvement lies in its integration. Bangkok is notorious for its traffic jams, so visitors are advised to rely on the rail and river networks whenever possible. Transit Bangkok is a journey planner that can help you choose the best route.",
+    "place": true,
+    "score": 6.88
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Do › Cycling",
+    "anchor": "Cycling",
+    "text": "Grasshopper Adventures, 57 Ratchadamnoen Klang Rd (near the Democracy Monument, right around the corner from Khao San Rd), ☏ +66 2 280-0832, journeys@grasshopperadventures.com. Tours through the historic Rattanakosin district of Bangkok, to the outskirts of Bangkok and one that takes place at night. 1,000-1,600 baht. SpiceRoads, 45 Soi Pannee, Pridi Banomyong Soi 26, Sukhumvit Soi 71, ☏ +66 2 381-7490. Many one and multi-day cycling trips in and around Bangkok. There are trips to the Bangkok Jungle, Ko Kret, Yaowarat, and Thonburi. 2,950 baht.",
+    "place": true,
+    "score": 6.85
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Do › Canals",
+    "anchor": "Canals",
+    "text": "Damnoen Saduak is a floating market that often appears in tourist brochures of Bangkok, but in practice it is 109 km (68 mi) west of Bangkok and has to be visited by bus from the Southern Bus Terminal.",
+    "place": true,
+    "score": 6.75
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Do › Cycling",
+    "anchor": "Cycling",
+    "text": "Bangkok Biking, Baan Sri Kung 350/123, Soi 71, Rama III Rd, ☏ +66 2-285 3955. Bicycle tours in small groups to and through unseen parts of Bangkok. Mostly free of traffic. A fun excursion for the whole family. 950-2,400 baht. Co van Kessel, ☏ +66 2 639-7351. Many cycling tours through Bangkok, taking in Chinatown, the canals of Thonburi, the \"Bangkok Jungle\" and many other places in between. 950-1,950 baht. Follow Me Bicycle Tours, 126 Sathorn Tai Rd, ☏ +66 2 286-5891. Half-day bicycle tours through Bangkok's residential streets. Included in the price is a fish spa and a barbecue meal after the tour. 1,000 baht.",
+    "place": true,
+    "score": 6.71
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Do › Aerobics dance",
+    "anchor": "Aerobics_dance",
+    "text": "Bangkok is a good place for aerobics dancing. Many places in Bangkok, for example, supermarkets or public parks, offer free outdoor aerobics classes. These classes usually start in the morning at 06:00 or in the evening at 18:00, and the session would last for one hour. Wear appropriate clothing. These classes don't require Thai language skill because instructor rarely uses verbal cues. Aside from exercising you can also meet the community of local people and foreigners.",
+    "place": true,
+    "score": 6.31
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Get around › By car",
+    "anchor": "By_car_2",
+    "text": "Bangkok is notorious for its massive traffic jams, and rightly so. In addition, traffic is chaotic and motorcyclists seemingly suicidal. Therefore, most tourists consider driving in Bangkok a nightmare, and it is recommended that you stick to public transport. However, the proliferation of massive shopping malls means that there are now places to park if you must drive into town, albeit at a high cost. Smartphones with GPS and navigation apps with voice directions make it easier to find your way.",
+    "place": true,
+    "score": 6.28
+   }
+  ]
+ },
+ {
+  "question": "What is the WiFi password at the Hilton in Berlin?",
+  "covered": false,
+  "right_any": [],
+  "wrong": [
+   "hampton",
+   "minsk"
+  ],
+  "articles": [
+   "Internet access",
+   "Berlin",
+   "Minsk"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Berlin",
+    "title": "Berlin",
+    "section": "Connect",
+    "anchor": "Connect",
+    "text": "You can find internet cafes and telephone shops all around Berlin. Do a bit of research with the telephone shops because most focus on a particular region in the world. Many bars, restaurants and cafes offer their guests free wi-fi. Customers of the ubiquitous Einstein Coffee get 30 minutes of free wifi. Metro (U-Bahn) stations offer free wi-fi to everybody: BVG Wi-Fi.",
+    "place": true,
+    "score": 12.3
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Internet_access",
+    "title": "Internet access",
+    "section": "Security concerns › Two-factor authentication",
+    "anchor": "Two-factor_authentication",
+    "text": "Making sure no password gets compromised by shoulder surfing, key loggers or other threats is difficult, so you probably want to enable two-factor authorisation (2FA) at any site where you don't log in as Jane Doe or Donald Duck. The most common type of 2FA requires that you in addition to remembering your password have a registered device, such as your smartphone, which shows you a one-time password (OTP, usually a number) to be entered along with your password when logging in. When the key-logger bad guys try to use your password, they'll find that they cannot log in without your smartphone, long gone with you.",
+    "place": true,
+    "score": 6.27
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Minsk",
+    "title": "Minsk",
+    "section": "Sleep › Mid-range",
+    "anchor": "Mid-range_2",
+    "text": "Hampton by Hilton Minsk City Centre, Vulica Talstoha 8 (At the main train station, Minsk Pasažyrski Мінск Пасажырскі, leave through the exit for the Družnaja Дружная bus station (at the back of the train station). Then a five-minute walk along vulica Talstoha.), ☏ +375 17 2154000, MSQHX.hampton@hilton.com. Check-in: 14:00, check-out: 12:00. A well-maintained international chain hotel. US$95. (updated May 2019)",
+    "place": false,
+    "score": 5.21
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Internet_access",
+    "title": "Internet access",
+    "section": "Access types › Wi-Fi",
+    "anchor": "Wi-Fi",
+    "text": "Free but secured public access points work in the same way as free and open-access points, but require a password to discourage non-patrons of the establishment from using it, or to provide security not available without cryptography. These are more likely to be found in restaurants, hotels and airports. If you are a customer, just ask for the password. Private open access points left open by their owners, usually as a friendly gesture to the community.",
+    "place": true,
+    "score": 5.01
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Minsk",
+    "title": "Minsk",
+    "section": "Get in › Getting to the city",
+    "anchor": "Getting_to_the_city",
+    "text": "The airport is served by buses №300Э and private minivans №1400-ТК and №1430-ТК running 24/7 every 15 to 45 min (see timetable ) from the central coach terminals (Aŭtavakzal Centraĺny, Аўтавакзал Цэнтральны; also may be spelt Avtovokzal Tsentralnyi, from its Russian name). The bus stop is outside the arrivals sectors 5/6. The timetable is on display at the stop. Free wifi is available on all buses and minivans, however, you will have to be able to receive an SMS with the password.",
+    "place": false,
+    "score": 4.87
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Internet_access",
+    "title": "Internet access",
+    "section": "Access types › Public-access computers",
+    "anchor": "Public-access_computers",
+    "text": "Security is an issue, as café computers could have keyloggers and other nasty forms of spyware to capture passwords, or temporary files may be left for other customers to find. See Security concerns below.",
+    "place": true,
+    "score": 4.69
+   }
+  ]
+ }
+]

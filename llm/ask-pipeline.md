@@ -183,6 +183,14 @@ llama.cpp runs with `-np 2` (2 parallel slots); on the box the model is shared w
 4. **Sources**: keep ints in `1..len(picked)`, dedupe, sort; default `[1]` if none survive.
 5. Returns `(clean_answer, sources)`.
 
+**Not covered** (platform decision 0020): if the check fails (numbers or grounding) and the
+answer says the guide doesn't cover the question (`says_not_covered`, `NOT_COVERED_RE`: "the
+guide/passages ... don't cover/mention/specify ...", "no information about", "not mentioned"),
+`check_answer` raises `NotCovered` (a `ValueError` subclass) instead. Gemma 4 E2B answers "The
+guide does not contain information about the WiFi password at the Hilton in Berlin.", whose
+words come from the question, so it used to be rejected as "not grounded". An honest answer that
+also passes the check is shown like any other.
+
 What it can't catch: an answer built from words that are in the passages but combined wrongly,
 e.g. describing Itami's monorail for a Kansai question (see gotchas).
 
@@ -191,12 +199,15 @@ e.g. describing Itami's monorail for a Kansai question (see gotchas).
 - `ValueError` (includes `json.JSONDecodeError`, a non-dict JSON, and `check_answer`'s reasons)
   → `rejected`; `rejected_by[reason]` where reason ∈ `empty`, `number not in passages`,
   `not grounded`, else `bad output`; the raw output (≤300 chars) is logged at INFO.
+- `asking.NotCovered` (caught first) → `not_covered`, detail "The on-board model found no answer
+  to that in the guide."; cached like `ok`. The model's text isn't shown (the page shows the
+  detail plus "The passages below are straight from the guide.", no page change needed).
 - `httpx.TimeoutException` / `asyncio.TimeoutError` → `timeout`.
 - any other exception → `offline` (connection refused, `raise_for_status`, missing keys).
 - `model_turn` is always released (`finally`).
 - Only `ok` answers are cached on the ask entry (`a["answer"]`); calling `/api/answer` again for
   a rejected/timeout id runs the model again.
-- `STATS["answers"][status] += 1` for ok/rejected/timeout/offline/busy (not `none`).
+- `STATS["answers"][status] += 1` for ok/not_covered/rejected/timeout/offline/busy (not `none`).
 
 ## Fallbacks when there's no model
 
@@ -208,6 +219,7 @@ e.g. describing Itami's monorail for a Kansai question (see gotchas).
 | model slow | | `timeout` after 90 s | note + passages |
 | model busy | | `busy` after 3 s | note + passages |
 | answer fails guard | | `rejected` | "didn't stick to the guide, so here's the guide itself" |
+| model says the guide doesn't cover it | | `not_covered` | "found no answer to that in the guide" + passages |
 | no passages | `id: null, passages: [], model: false` | — | "The guide doesn't seem to cover that..." |
 
 ## Tests that pin this behaviour
@@ -218,4 +230,31 @@ lowercase lisbon → Eat, Osaka airport → Get in, budget respected, nonsense �
 `score_passages`), `test_answer_from_model` (citations stripped, out-of-range source dropped,
 request body has `cache_prompt` and `json_schema`, answers cached), `test_answer_guards`
 (invented number, ungrounded answer, connect error → offline, read timeout → timeout, unknown id
-→ 404, stats reasons), `test_answer_busy`, `test_no_model`.
+→ 404, stats reasons), `test_honest_not_covered` (not_covered status, cached, model text not
+shown; wrong answers still rejected), `test_answer_busy`, `test_no_model`.
+
+## Model eval (`evals/answer_eval.py`)
+
+Same prompt, schema, sampling and `check_answer` as `/api/answer`, on fixed passages (gathered
+once from the Wikivoyage ZIM, so every run sees the same input), 3 samples per question. Two
+sets: `answer_cases.json` (15 questions, the ones decision 0018's comparison used; tuned against)
+and `answer_check.json` (7 more, never tuned against). Each case has `covered` plus `right_any` /
+`wrong` markers; outcomes are right / honest (not_covered when the guide has no answer) / missed /
+wrong (shown but wrong) / dropped. Run it in the guide image on the dev stack's network (command
+in the script's docstring); `--gather /data/zim` refreshes the passages after a retrieval change.
+
+Gemma 4 E2B, 3 samples, 2026-11-22 (platform decision 0020):
+
+| | tuned set (45) | check set (21) |
+|---|---|---|
+| before (old check) | right 35, wrong 9, rejected 1 (the honest WiFi answer) | right 18, wrong 3 |
+| after (NotCovered) | right 35, honest 1, wrong 9 | right 18, wrong 3 |
+
+The wrong ones are all an answer from a passage about another place or route: Kansai → Itami's
+buses and monorail (3/3), Heathrow + Luton's trains (3/3), Schiphol → the Lisse/Keukenhof bus
+(3/3), Narita → Narita city (3/3). The passages for those questions don't contain the answer, so
+this is retrieval, not the check. Two prompt variants were tried and dropped: "never pass off a
+passage about another place/airport/route as the answer" in the system prompt (33 right, 12
+wrong) and the question before and after the passages (fixed Heathrow, but pulled the €14
+Airports Ticket into the Paris metro answer and the ferry shuttle into Changi: 30 right + 3 honest,
+12 wrong).

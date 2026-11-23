@@ -1,0 +1,563 @@
+[
+ {
+  "question": "How do I get from Narita airport to Tokyo?",
+  "covered": false,
+  "right_any": [],
+  "wrong": [
+   "250",
+   "3500",
+   "1110",
+   "abiko",
+   "joban"
+  ],
+  "articles": [
+   "Narita",
+   "Tokyo",
+   "Narita International Airport"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Tokyo",
+    "title": "Tokyo",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "🌍 Narita International Airport (NRT IATA; 成田国際空港 Narita Kokusai Kūkō). Near the town of Narita nearly 70 km (43 mi) east of Tokyo. Serves most international flights into Tokyo as well as limited domestic flights, primarily on low-cost carriers. 🌍 Tokyo Haneda Airport (HND IATA; 羽田空港 Haneda Kūkō or 東京国際空港 Tōkyō Kokusai Kūkō). The busiest airport in Japan and second busiest in Asia, located in Ōta ward, 14 km (8.7 mi) south of central Tokyo. Serves most domestic flights, and expansions since 2010 have also turned it into a major international hub, primarily on routes with heavy business traffic.",
+    "place": true,
+    "score": 12.0
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Tokyo",
+    "title": "Tokyo",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "Tokyo (TYO IATA for all airports) and the Kanto Region are served by two major airports. Narita International Airport (NRT IATA) is Tokyo's main airport for international flights, but also serves a handful of domestic flights, particularly on low-cost carriers, and is convenient as a transit airport for those travelling between North America to most major East and Southeast Asian cities.",
+    "place": true,
+    "score": 11.95
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Narita",
+    "title": "Narita",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "Main article: Narita International Airport The main airport for Narita is, of course, Narita Airport. The easiest way into Narita city from the airport is to take the Keisei Line service which leaves every 20 minutes. The fare is ¥250 and the ride takes about ten minutes. Local buses are available for use from the train station. Do not take train services from the airport labeled as “Narita Sky Access Line\", as they do not go to Narita City. Also note that in order to access the Main Line platforms where trains to Narita depart from, you must go through a second ticket gate.",
+    "place": true,
+    "score": 8.66
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Tokyo",
+    "title": "Tokyo",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "Tokyo Haneda Airport (HND IATA), which is much closer to central Tokyo and thus much more convenient and economical for getting into Tokyo and vicinity, is the main airport for domestic flights, but has also become a major hub for international flights as of the 2020s, particularly on routes that see heavy business traffic. There is also Ibaraki Airport (IBR IATA) for some low-cost carriers, and the Chōfu Airfield, serving turboprop flights to the Izu Islands.",
+    "place": true,
+    "score": 8.31
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Narita",
+    "title": "Narita",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "A direct taxi ride from the airport to Narita city costs approximately ¥3500; it will be cheaper if you go into town by train, and then take a taxi from there. Local buses also run directly from the airport to some of the city's main attractions.",
+    "place": true,
+    "score": 8.24
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Narita",
+    "title": "Narita",
+    "section": "Get in › By train",
+    "anchor": "By_train",
+    "text": "If you are travelling from Tokyo to Narita City via the JR Line, the hourly Airport Narita commuter train will take you from Tokyo Station to JR Narita station via the Sobu Line in 75 minutes at a cost of ¥1110. An alternate route is to take the Joban Line rapid service from Ueno via Abiko. Either trip is free with a Japan Rail Pass.",
+    "place": true,
+    "score": 8.15
+   }
+  ],
+  "note": "The passages only cover the airport to Narita city and Tokyo Station to Narita city."
+ },
+ {
+  "question": "Is it safe to walk around Bogota at night?",
+  "covered": true,
+  "right_any": [
+   "candelaria",
+   "pickpocket",
+   "taxi",
+   "precaution",
+   "mugging"
+  ],
+  "wrong": [],
+  "articles": [
+   "Bogotá",
+   "Bogotá/La Candelaria",
+   "Bogotá/Santa Fé-Los Mártires"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bogotá",
+    "title": "Bogotá",
+    "section": "Stay safe",
+    "anchor": "Stay_safe",
+    "text": "But there are certain areas in neighborhoods, that have a certain problem with pickpocketers and the occasional mugging, these include some areas of La Candelaria (after dark on weeknights—daytime walks and F-Sa nights are perfectly fine, no matter where you are), some very small parts of Santa Fé, and to a much lesser extent the more southern parts of Chapinero close to Avenida Caracas. Visitors need to be just a bit more careful in the South. Trust the locals if they tell you an area is unsafe or dangerous.",
+    "place": true,
+    "score": 11.72
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bogotá/Santa_Fé-Los_Mártires",
+    "title": "Bogotá/Santa Fé-Los Mártires",
+    "section": "Stay safe",
+    "anchor": "Stay_safe",
+    "text": "This area tends to be generally very safe, at both day and night, especially the Macarena, La Merced, and International Center neighberhoods, which are heavily policed. San Victorino (the great market area), can be a little sketchy, especially at night, so don't neglect your personal belongings and be weary for pickpocketers, but the borough tends to be very safe, especially during the day. Articles without Wikipedia links (via Wikidata) See listing with no coordinates Buy listing with no coordinates Eat listing with no coordinates Drink listing with no coordinates Sleep listing with no coordinates Articles with no Wikidata coords Pages using the Kartographer extension",
+    "place": false,
+    "score": 9.71
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bogotá",
+    "title": "Bogotá",
+    "section": "Get around › By Transmilenio",
+    "anchor": "By_Transmilenio",
+    "text": "Riders should keep a close eye on their pockets and avoid flashing expensive items, as there is a moderate risk of pick-pocketing, particularly during peak hours or at night.",
+    "place": true,
+    "score": 9.61
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bogotá",
+    "title": "Bogotá",
+    "section": "Stay safe",
+    "anchor": "Stay_safe",
+    "text": "Taxi crime is a weird problem here (see \"Million Dollar Ride\" below). While longer-term visitors will find themselves lazily hailing cabs now and then, it is best to call cabs or order through an app, and not hail them off the street. Any cab dispatched will be safe, while hailed cabs are infrequently, (though once a while), a little bit unsafe. It may take a bit longer, but your safety is worth an extra wait. Hotels and nicer restaurants will always be happy to call one for you, and often offer to unprompted.",
+    "place": true,
+    "score": 8.56
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bogotá/La_Candelaria",
+    "title": "Bogotá/La Candelaria",
+    "section": "Stay safe",
+    "anchor": "Stay_safe",
+    "text": "La Candelaria is just not a safe neighborhood, this is not to say that you will have problems—in all likelihood you'll be just fine—but La Candelaria demands extra precautions. At night most residents lock their steel doors and leave the streets empty, which naturally makes them safer, but you are more vulnerable if you are walking around alone or in a small group. If you are staying in a hostel, though, there is usually a good nightlife scene without going outside! The big exception is on Thursdays and Fridays, which are the Bogotanos' \"going out\" nights, and the area stays bustling until late.",
+    "place": false,
+    "score": 8.39
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bogotá",
+    "title": "Bogotá",
+    "section": "Get around › By Transmilenio",
+    "anchor": "By_Transmilenio",
+    "text": "The vehicles used in that systems are articulated buses; they are fast and safe, but could be full during the afternoon times. The system also uses different kinds of stations: the simples offers bus services at the right and left sides (north-south;east-west) and the intermediates are usually located in middle points and have complete services, such as elevators, station libraries, bikes parks, restrooms. Alimentadores services (buses that reach zones the articulated buses do not) and the portals, the nine arrival and departure places of the buses, are located near the entrances to the city. Service ends 10–11PM, depending on the station.",
+    "place": true,
+    "score": 8.33
+   }
+  ]
+ },
+ {
+  "question": "Where can I find cheap street food in Bangkok?",
+  "covered": true,
+  "right_any": [
+   "yaowarat",
+   "cart",
+   "pad thai",
+   "street",
+   "khao san"
+  ],
+  "wrong": [],
+  "articles": [
+   "Bangkok",
+   "Bangkok/Khao San Road",
+   "Bangkok/Yaowarat and Phahurat"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Eat › Ethnic cuisine",
+    "anchor": "Ethnic_cuisine",
+    "text": "One of the best places to go to for Chinese food is Yaowarat. It has a range of street stalls and cheap restaurants selling expensive delicacies at affordable prices. Soi Phadung Dao is the best street for huge seafood restaurants. Try 1 kg of huge barbecued prawns for about 300 baht. That being said, due to the large Thai-Chinese population in Bangkok, Chinese influences pervade much of Bangkok's culinary scene, and even outside Chinatown, many of Bangkok's most famous street food stalls are owned by ethnic Chinese.",
+    "place": true,
+    "score": 20.31
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Eat › Street food",
+    "anchor": "Street_food",
+    "text": "While generally not particularly high class, street food is among the most delicious food and there even is a venue that earned a Michelin star in their 2018 guide. The venues can be found all over Bangkok—wherever you're staying, you rarely have to walk more than 100 m for a cart or street restaurant. Many street vendors sell satay (สะเต๊ะ) with hot sauce for 5-10 baht a piece.",
+    "place": true,
+    "score": 16.39
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Eat",
+    "anchor": "Eat",
+    "text": "For Muslims, the alleys around Haroon Mosque in the Bang Rak area are home to many Muslim families, and hence full of stalls selling halal food. Another good place to find halal food is the Ramkhamhaeng Night Market, located next to the campus of Ramkhamhaeng University.​",
+    "place": true,
+    "score": 15.88
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Eat › Ethnic cuisine",
+    "anchor": "Ethnic_cuisine",
+    "text": "Thai dishes can roughly be categorised into central, northern, northeastern and southern cuisine. What's so great about Bangkok is that all these cuisines are present. Isaan food (from the northeast of Thailand) is popular; generally street restaurants serve on plenty of small plates that can be shared. Som tam (ส้มตำ) is a salad made from shredded and pounded raw papaya — again, it is spicy, but oh so delicious. If you want to dine the Isaan way, also order some khao niew (sticky rice), kai yang (grilled chicken) and moo yang (grilled pork). Isaan food is very spicy; say mai pet or pet nit noy to tone it down.",
+    "place": true,
+    "score": 12.46
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Eat › Street food",
+    "anchor": "Street_food",
+    "text": "One of Thailand's national dishes you can try is pad thai (ผัดไทย), stir-fried rice noodles with eggs, fish sauce, tamarind juice and red chili pepper. It can be prepared for you on one of the ubiquitous carts or served in a street restaurant for about 50 baht. You can order it with chicken (kai) or shrimps (kung). Another one of Thailand's national dishes you should try is tom yam kung (ต้มยำกุ้ง), a sour soup with prawns, lemongrass and galangal—beware, as it is very spicy! Khao man kai (ข้าวมันไก่) is another popular street food. You can identify it at stalls displaying boiled chicken.",
+    "place": true,
+    "score": 12.24
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Bangkok",
+    "title": "Bangkok",
+    "section": "Eat",
+    "anchor": "Eat",
+    "text": "There are plenty of vegetarian restaurants in the more tourist-friendly parts of town (especially in hippie district Khao San Road). Vegetarian dishes are also readily available on the menus of regular restaurants. On request, even typical street restaurants will easily cook a vegetarian equivalent of a popular Thai dish for you. Ask for \"jay\" food to leave the meat out of the dish. For example, \"khao pad\" is fried rice and \"khao pad jay\" is vegetarian fried rice. The most common animal product used would be oyster sauce. To avoid it, say \"mai ao naam man hoi\". Be aware that all street noodle vendors use meat broth for noodle soup.",
+    "place": true,
+    "score": 12.17
+   }
+  ]
+ },
+ {
+  "question": "How do I get from Dublin airport to the city centre?",
+  "covered": true,
+  "right_any": [
+   "dublin express",
+   "airlink",
+   "747",
+   "aircoach",
+   "bus",
+   "taxi"
+  ],
+  "wrong": [],
+  "articles": [
+   "Dublin",
+   "Dublin Airport",
+   "Swords"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Dublin",
+    "title": "Dublin",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "Taxis to city centre might cost €34-40 (July 2024), so they are competitive with the Aircoach for a group of three or more. See \"Get around\" for rules on taxis. Other destinations: most buses to other Irish cities run via the airport, see individual cities' \"Get in\". Within County Dublin: Bus 101 runs every 20 min to Balrothery, Balbriggan and Drogheda. This bus runs from Dublin Talbot St via Drumcondra but is not available for journeys just between city, airport and Swords. Bus 102 runs from the airport every 30 min to Swords, Malahide, Portmarnock and Sutton near Howth. Drumcondra (Bus 16 & 41) has trains from Connolly towards Maynooth.",
+    "place": true,
+    "score": 13.51
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Dublin",
+    "title": "Dublin",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "🌍 Dublin Airport (DUB IATA) (10 km north of city centre). Dublin Airport has an extensive short and medium haul network, and is the base for Aer Lingus, Aer Lingus Regional, and Ryanair. Terminal 2 handles wide-bodied jets and is used by Aer Lingus (& Regional), British Airways, American Airlines, Delta, Emirates, Norwegian and United. All others use the older Terminal 1, some 300 m north with a walkway between. Together they offer direct flights from most major cities in the UK (serving all London airports, but most frequently Heathrow) and continental Europe.",
+    "place": true,
+    "score": 13.15
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Dublin",
+    "title": "Dublin",
+    "section": "Get around › Tickets and Leap Card",
+    "anchor": "Tickets_and_Leap_Card",
+    "text": "A special Leap Visitor Card is also available for tourists, which allows unlimited use of all public transport for 1 day (€8), 3 days (€16), or 7 days (€32), starting from the time of first use. This can be purchased at arrivals in Dublin Airport (WH Smith and Wrights in Terminal 1 and Spar in Terminal 2) in some city centre tourist offices, or ordered online for delivery. Once your chosen time period expires, you can also top it up with additional time periods at most convenience shops in the city.",
+    "place": true,
+    "score": 11.74
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Dublin_Airport",
+    "title": "Dublin Airport",
+    "section": "Ground transportation › By train",
+    "anchor": "By_train",
+    "text": "Dublin Airport is - as of 2023 - not served by any rail services, although a Metro line is planned to be built from the airport into the city centre by 2027. However, bus services are available to the main city centre stations and to nearby suburban stations: Airlink route 747 operates to Connolly Station and Heuston Station in the city centre: Connolly Station serves the cross-border Enterprise train to Belfast in Northern Ireland, as well as Intercity trains to Sligo in the northwest and Wexford in the southeast. Heuston Station serves Intercity trains to the south and west of Ireland, including Cork, Galway, Kilkenny, Limerick, Tralee, Waterford and Westport.",
+    "place": true,
+    "score": 11.6
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Dublin",
+    "title": "Dublin",
+    "section": "Get around › By car",
+    "anchor": "By_car_2",
+    "text": "Don't drive in the city centre if you can realistically avoid it. For instance, if you plan to see Dublin before touring the country, take the bus in from the airport and return there a few days later to hire your car. For a day-trip, use the city edge Park & Rides. If you do venture in, you face traffic congestion (even on Sunday), difficulty parking, confusing one-ways or diversions for road repairs, traffic congestion, drunken revellers and phone-entranced jaywalkers veering into your path, ill-signed but rigidly enforced bus lanes, the silent onrush of trams, and traffic congestion.",
+    "place": true,
+    "score": 11.53
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Dublin",
+    "title": "Dublin",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "Dublin Express runs to city centre and Heuston Station every 10 minutes or so. The last bus to the city is 11PM then the next is 5:30AM. The cost in September 2024 was €8 single. €10 return if purchased online.",
+    "place": true,
+    "score": 11.35
+   }
+  ]
+ },
+ {
+  "question": "How much is the entrance fee for the Blue Lagoon in Iceland?",
+  "covered": false,
+  "right_any": [],
+  "wrong": [
+   "3 kr",
+   "10 kr",
+   "15 kr",
+   "21 kr"
+  ],
+  "articles": [
+   "Blue Lagoon",
+   "Iceland",
+   "Route 1 (Iceland)"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Blue_Lagoon",
+    "title": "Blue Lagoon",
+    "section": "Get in › By bus",
+    "anchor": "By_bus",
+    "text": "There is a scheduled service from the main BSI bus terminal in downtown Reykjavík, and a cheaper bus service that includes hotel pickup and Blue Lagoon entrance fee (Netbus). It is possible to take a bus from Keflavík International Airport and stop in the Blue Lagoon on the way to Reykjavík, with a bath included in the price. If you're arriving on your own by public transport, take the buses to Grindavík from Keflavík or Reykjavík.",
+    "place": true,
+    "score": 11.93
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Connect › Telephone",
+    "anchor": "Telephone",
+    "text": "Costs for calls from a landline phone are based on a dial-up fee along with a fee for each minute. The dial up fee for all domestic phones is typically 3 kr, each minute to landlines costs 10 kr and each minute to GSM costs around 21 kr (as of December 2014).",
+    "place": true,
+    "score": 10.64
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Connect › Mobile",
+    "anchor": "Mobile",
+    "text": "If you have an unlocked GSM-compatible handset (check band compatibility), you can purchase a SIM card from phone outlets. Costs for calls from a mobile are based on a dial-up fee along with a fee for each minute. The dial-up fee for all domestic numbers is typically 15 kr, each minute to all domestic phones costs 25 kr and each text message 15 kr, although Vodafone and Nova also sell prepaid plans with unlimited voice included. The cost for Internet access is 12 kr per megabyte (as of May 2019).",
+    "place": true,
+    "score": 9.4
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Other destinations › Other attractions",
+    "anchor": "Other_attractions",
+    "text": "🌍 Blue Lagoon (Icelandic: Bláa Lónið) (BLAU-ah LONE-eeth) – famous outdoor pool and health centre. The spa is in Grindavík on the Reykjanes Peninsula, south-western Iceland. It is situated approximately 13 km (8 mi) from the Keflavík International Airport and 39 km (24 mi) from Reykjavík. This geothermal spa in the middle of a lava field with its milky blue water is quite surreal. The hot water is sourced from the outlet of the nearby geothermal plant which extracts most of the heat energy and reduces the superheated water to a temperature that humans enjoy.",
+    "place": true,
+    "score": 8.83
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Do",
+    "anchor": "Do",
+    "text": "The geothermal spa Blue Lagoon, although being an artificial hot spring, is a very popular sight and activity located between the capital and the main airport. Mývatn Nature Baths is another choice, but it is smaller and in the Eastern part of the country. There also are a lot of local hotpots around the country, but not all of them are safe. Football: the men's national team play at Laugardalsvöllur in Reykjavik. 12 clubs play in Besta deild karla and 12 in 1. deild karla.",
+    "place": true,
+    "score": 7.54
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Iceland",
+    "title": "Iceland",
+    "section": "Other destinations › Other attractions",
+    "anchor": "Other_attractions",
+    "text": "🌍 Jökulsárlón (the Jökulsár Lagoon) — the majestic glacial lagoon in southeast Iceland located near Höfn on Route 1. Breiðamerkurjökull glacier retreated quickly from 1920 to 1965 leaving this breathtaking lagoon, which is up to 190 m deep. Ice breaks off from the glacier keeping the lagoon stocked with icebergs all year round. 🌍 Landmannalaugar — a region of outstanding natural beauty reachable by bus (or 4x4) from Reykjavík. Situated in the Interior, it gives a taste of the uninhabited highlands at Iceland’s core.",
+    "place": true,
+    "score": 7.17
+   }
+  ],
+  "note": "Only that a Netbus ticket includes the fee; no price."
+ },
+ {
+  "question": "Which bus goes from Lisbon airport to Cascais?",
+  "covered": false,
+  "right_any": [
+   "cais do sod"
+  ],
+  "wrong": [
+   "44",
+   "22",
+   "83",
+   "705",
+   "708",
+   "744",
+   "745",
+   "208",
+   "736",
+   "783"
+  ],
+  "articles": [
+   "Lisbon",
+   "Cascais",
+   "Greater Lisbon"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get in › By car",
+    "anchor": "By_car",
+    "text": "From/to north and the airport: Coming from the north, there is the A1, that connects Lisbon to Santarém, Fátima, Leiria, Coimbra, Aveiro, Porto. The A1 ends near the airport. There's also the A8, which goes to Torres Vedras, Caldas da Rainha, Alcobaça, Leiria. From the west, there is the A5, which connects to Estoril, Cascais, and the IC19 that crosses all the suburbs and ends near Sintra.",
+    "place": true,
+    "score": 17.1
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get around › Metro",
+    "anchor": "Metro",
+    "text": "The red line Vermelha starts directly at Lisbon Airport and stops at Oriente (for long-distance trains and the Parque das Nações). That said, one needs to change to another metro line to get to the historic centre. The yellow line Amarela is of perhaps least use to tourists as it mostly connects the northern residential districts with the city. No metro line goes to Belém. You need to take a train from Cais do Sodré, tram line 15E or a bus to get there.",
+    "place": true,
+    "score": 15.05
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get in › By plane",
+    "anchor": "By_plane",
+    "text": "The Lisbon Airport serves the city. If no flight fits, you can take a plane to Porto or Faro. Both cities have direct trains and buses to Lisbon.",
+    "place": true,
+    "score": 13.29
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get in › Getting from/to the airport",
+    "anchor": "Getting_from/to_the_airport",
+    "text": "Bus lines 22, 44, 83, 705, 708, 744, 745, or night bus line 208. Bus 44 takes you to the Oriente railway station in about 10 minutes, where you can change for metro and continue to the city centre. Board fare is €2. 7 Colinas transport card (see \"Get around\" section) can be used which can be bought at the airport post office. You are not allowed to take large pieces of luggage on these buses.",
+    "place": true,
+    "score": 13.12
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Lisbon",
+    "title": "Lisbon",
+    "section": "Get around › Bus",
+    "anchor": "Bus",
+    "text": "Two of the popular bus lines now offer complimentary NetBus Wi-Fi service - line 736 from Cais do Sodré via Avenida da Liberdade and Avenida da República (stops at Campo Grande, Campo Pequeno and Entrecampos), and line 783 from Portela Airport to Amoreiras shopping and office centre via Avenida da República and Praça Marquês de Pombal. Using those two bus lines you can get to most of the important tourist attractions while enjoying Wi-Fi – simply log in to the \"CARRIS-TMN\" network while on the bus.",
+    "place": true,
+    "score": 12.38
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Cascais",
+    "title": "Cascais",
+    "section": "Get in",
+    "anchor": "Get_in",
+    "text": "Cascais is easily reachable from Lisbon by car or by train (40 min), from the Cais do Sodré station. A return ticket costs €5 (June 2018) and can be bought from the automatic ticket machines. Keep the ticket as it will be checked and punched by the conductor in both directions. Each ticket is only valid for one person at a time and costs €0.50 to buy and can be reused until a set date of expiration. Carris operate a bus between Cais do Sodre and Lisbon Airport every 20 min.",
+    "place": true,
+    "score": 11.61
+   }
+  ],
+  "note": "No bus to Cascais; the train from Cais do Sodre is the real link."
+ },
+ {
+  "question": "What is the phone number of the Four Seasons hotel in Kyoto?",
+  "covered": false,
+  "right_any": [],
+  "wrong": [
+   "81",
+   "0120",
+   "0570"
+  ],
+  "articles": [
+   "Kyoto",
+   "Kyoto/Higashiyama",
+   "Japan"
+  ],
+  "passages": [
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kyoto",
+    "title": "Kyoto",
+    "section": "Understand › Climate",
+    "anchor": "Climate",
+    "text": "Kyoto truly exhibits the four seasons of spring, summer, fall and winter, with many flowers in spring and changing leaves in the fall attracting hordes of tourists. Kyoto is particularly humid in summer, as the city is flanked by mountains. From about mid-June to the end of July is the rainy season, so most travelers avoid this time. The type of rain ranges from drizzles to off-and-on showers to downpours. There is another typhoon season in late August and September. Winters are generally cold but without snowfall.",
+    "place": true,
+    "score": 18.99
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Connect › By phone",
+    "anchor": "By_phone",
+    "text": "Phone numbers starting with 0120 or 0800 are \"free-dial\" numbers, and are free to call from any landline (payphones included), while phone numbers starting with 0570 are \"navi-dial\" numbers, which are variable-rate numbers used by businesses (one number works nationwide, but you are charged based on the distance between your phone and the closest call center operated by the company).",
+    "place": false,
+    "score": 14.89
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Understand › Climate",
+    "anchor": "Climate",
+    "text": "The Japanese are proud of their four seasons, but the tourist with a flexible travel schedule should aim for spring or autumn. Spring is one of the best times of year to be in Japan. The temperatures are warm but not hot, there's not too much rain, and March–April brings the justly famous cherry blossoms (sakura) and is a time of revelry and festivals.",
+    "place": false,
+    "score": 10.52
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Connect › By phone",
+    "anchor": "By_phone",
+    "text": "International dialing prefixes vary from company to company. Check with your operator for more details. For international calls to Japan, the country code is 81. Phone numbers in Japan have the format +81 3 1234-5678 where \"81\" is the country code for Japan, the next digits are the dialing zone where the local number is located (can contain from one to three digits) and the remaining digits (six to eight digits) are the \"local\" part. When calling within Japan, the long-distance prefix (trunk code) is 0, and this is usually written in the number, like 03-1234-5678; when calling Japan from abroad, leave off the \"0\".",
+    "place": false,
+    "score": 10.18
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Kyoto/Higashiyama",
+    "title": "Kyoto/Higashiyama",
+    "section": "Sleep › Mid-range",
+    "anchor": "Mid-range_2",
+    "text": "There's no key; just punch in code (the last 4 digits of your phone number, if you gave it at reservation - and you should) into the pad by your door. The rooms facing the river come with a beautiful view but also with the (muted) traffic noise from the street. The proprietors close the front desk and go home at 18:00; if you are planning on a late arrival, e-mail them and they'll send you your room number and the access code to enter the building. Doubles from ¥12,000.",
+    "place": false,
+    "score": 9.86
+   },
+   {
+    "zim": "wikivoyage_en_all_nopic_2026-09",
+    "path": "Japan",
+    "title": "Japan",
+    "section": "Sleep › Outside",
+    "anchor": "Outside",
+    "text": "In the warmer months, people sleeping or napping on streetsides outside the bigger train stations is a common sight. Many of them just missed their last trains and prefer spending three or four hours waiting for the first train on the asphalt rather than three or four thousand yen for a short-term stay in a hotel or public bath. While this is definitely the least comfortable way to sleep through the night, it is especially popular with college students (who have no money), and absolutely tolerated by police and station staff; even drunkards sleeping next to their own puke will not be disturbed in their booze-induced sleep.",
+    "place": false,
+    "score": 9.52
+   }
+  ]
+ }
+]

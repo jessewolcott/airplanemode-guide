@@ -20,6 +20,9 @@ docker run --rm -v "H:\Github\airplanemode\airplanemode-guide:/src" -w /src pyth
 In Git Bash, set `MSYS_NO_PATHCONV=1` for `docker run -v`, and keep scratch files in the repo
 or the session scratchpad: Docker can't see Git Bash's `/tmp`.
 
+Model eval (run it after a model, prompt or check change; see `llm/ask-pipeline.md`):
+`docker run --rm --network airplanemode -v "H:\Github\airplanemode\airplanemode-guide:/work" -w /work airplanemode-guide:dev python evals/answer_eval.py http://llm:8080`
+
 ## Rules
 
 - **Relative URLs only** in pages: the app runs at `/guide/`. Articles live at
@@ -56,7 +59,9 @@ Push a `vX.Y.Z` tag. CI tests, then publishes `ghcr.io/jessewolcott/airplanemode
   answers from a neighbouring passage: for "Kansai airport to Osaka
   city centre" it can describe Itami airport's monorail. The grounding guard can't catch that
   (the words are in the passages). Use that question when working on ranking.
-- On Gemma 4 E2B, `check_answer()` drops honest replies like "the guide doesn't cover this"
-  (platform decision 0018; recheck the prompt).
+- Gemma 4 E2B (platform decision 0020): an honest "the guide doesn't cover this" is now status
+  `not_covered`, not a rejection. Still wrong 9/45 + 3/21 in `evals/answer_eval.py`: when the
+  passages lack the answer (Kansai, Schiphol, Narita), Gemma answers from a passage about another
+  airport or route. That's retrieval; prompt wording didn't fix it (llm/ask-pipeline.md).
 - Python on Windows reads piped text as cp1252: decode responses as UTF-8 when checking
   answers from Git Bash, or you'll see mojibake that isn't there.

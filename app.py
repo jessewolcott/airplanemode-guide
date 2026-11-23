@@ -198,6 +198,11 @@ async def answer(body: AnswerReq):
         if not isinstance(data, dict):
             raise ValueError("bad output")
         text, sources = asking.check_answer(data.get("answer"), data.get("sources"), picked)
+    except asking.NotCovered:  # an honest "the guide doesn't cover this": say so, keep the passages
+        STATS["answers"]["not_covered"] += 1
+        out = {"status": "not_covered", "detail": "The on-board model found no answer to that in the guide."}
+        a["answer"] = out
+        return out
     except ValueError as e:  # bad JSON or failed the grounding check
         reason = str(e) if str(e) in ("empty", "number not in passages", "not grounded") else "bad output"
         STATS["answers"]["rejected"] += 1

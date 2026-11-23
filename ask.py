@@ -262,12 +262,39 @@ def prompt(question, picked):
 
 
 NUM_RE = re.compile(r"\d+(?:[.,:]\d+)*")
+# "The guide doesn't cover this", "The passages do not mention ...", "There is no information about ..."
+NOT_COVERED_RE = re.compile(
+    r"\b(guide|passages?|text|information)\b[^.]{0,50}?\b(do(?:es)?n[’']?t|do(?:es)? not|did not|didn[’']?t|"
+    r"has no|have no|contains? no|gives? no|never)\b[^.]{0,30}?\b(cover|mention|contain|say|include|specify|give|"
+    r"provide|list|have|offer|state|discuss|address|answer|detail)"
+    r"|\bno (information|details?|mention)\b|\bnot (covered|mentioned|specified|included|listed)\b", re.I)
+
+
+class NotCovered(ValueError):
+    """The model said honestly that the passages don't answer the question."""
+
+
+def says_not_covered(text):
+    return bool(NOT_COVERED_RE.search(text or ""))
+
+
 def check_answer(answer, sources, picked):
     """Deterministic guard: the model's answer must stay inside the passages.
-    Returns (cleaned answer, sources) or raises ValueError(reason)."""
+    Returns (cleaned answer, sources) or raises ValueError(reason). An answer that fails the check
+    but says the guide doesn't cover the question raises NotCovered (a ValueError) instead: that's
+    the right answer, though its words (the question's "WiFi password") aren't in the passages."""
     answer = re.sub(r"\s*\[\d+(?:\s*,\s*\d+)*\]", "", (answer or "")).strip()
     if len(answer) < 15:
         raise ValueError("empty")
+    try:
+        return _grounded(answer, sources, picked)
+    except ValueError:
+        if says_not_covered(answer):
+            raise NotCovered("not covered") from None
+        raise
+
+
+def _grounded(answer, sources, picked):
     text = " ".join(p["text"] + " " + p["title"] + " " + (p["section"] or "") for p in picked)
     nums_src = set(NUM_RE.findall(text.replace(",", "")))
     for num in NUM_RE.findall(answer.replace(",", "")):

@@ -3,6 +3,7 @@
 .vscode
 .venv
 tests
+evals
 __pycache__
 *.md
 compose.yaml
