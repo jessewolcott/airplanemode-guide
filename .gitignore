@@ -5,5 +5,3 @@ __pycache__/
 *.gguf
 *.zim
 *.zim.part
-# Local "how it is built" notes for LLMs and engineers; not published.
-llm/
