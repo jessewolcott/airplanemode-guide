@@ -50,7 +50,7 @@ Returns `[(zim_id, path, title, is_place)]`, max `MAX_ARTICLES = 3`, deduped by 
 
 `articles` in the API response is this list (in this order), shown on the page as "Read more".
 
-## 2. Split into passages: `library.passages()` (library.py:357-415)
+## 2. Split into passages: `library.passages()` (library.py:363-421)
 
 `passages(raw_html, max_words=110)` → `[(section_heading, anchor_id, text)]`:
 
@@ -171,7 +171,7 @@ a repeated prefix — the system prompt), `response_format: {"type": "json_schem
 than `LLM_WAIT` (3 s) → `busy` (the page says so and keeps the passages). The standalone
 llama.cpp runs with `-np 2` (2 parallel slots); on the box the model is shared with other apps.
 
-### `check_answer(answer, sources, picked)` (264-283) — the grounding guard
+### `check_answer(answer, sources, picked)` (265-283) — the grounding guard
 
 1. Strip citation markers like `[1]` / `[1, 2]` from the answer; `< 15` chars → `ValueError("empty")`.
 2. **Numbers**: source text = all passages' text + title + section. With commas removed (so

@@ -10,7 +10,7 @@ duplicated between `index.html`'s inline `<style>` and `article.css` (`--bg #0d0
 
 Served by `GET /` with `Cache-Control: no-cache`; it always loads, even with no content.
 
-### Markup (77-113)
+### Markup (79-120)
 
 - Header: compass icon (inline SVG), "Travel **Guide**", and at the right end the AirplaneMode
   home button `a.am-home` (`href="../"`, 44 px house icon, accent focus ring; platform app
@@ -23,7 +23,7 @@ Served by `GET /` with `Cache-Control: no-cache`; it always loads, even with no 
   water, Cape Town hiking). Visible only in Ask mode; clicking one fills the box and submits.
 - `#out`: results area. Footer with `#credit` (replaced with the ZIM titles/dates from /health).
 
-### Script (114-257)
+### Script (121-264)
 
 Helpers: `$` = querySelector; `esc()` HTML-escapes; `art(zim, path, anchor)` builds the
 relative article URL `z/<enc zim>/<each path segment encoded>#<enc anchor>`.
@@ -31,7 +31,7 @@ State: `mode` (`ask`), `ready`, `llm`, `run` (a counter to discard stale respons
 
 - **Mode** (`setMode`, 120-129): updates pressed state, button text, placeholder, aria-label,
   examples visibility; hides suggestions.
-- **Health / banner** (136-165): `fetch("health")` once on load and then every 3 s **while not
+- **Health / banner** (143-172): `fetch("health")` once on load and then every 3 s **while not
   ready** (once ready, polling stops, so `llm` isn't refreshed later). Sets `ready`, `llm`, the
   credit line. When not ready, the banner shows by downloader state:
   `downloading` ("Downloading the guide… N%", "X MB of Y MB, about N min left. It only needs the
@@ -40,10 +40,10 @@ State: `mode` (`ask`), `ready`, `llm`, `run` (a counter to discard stale respons
   content on this box" with a hint about `.zim` / `ZIM_URL`.
   After the first health call, `?q=` in the URL (from an article's search box) switches to
   Search mode and runs it.
-- **Suggestions** (167-193): only in Search mode, ≥ 2 chars, content ready; 150 ms debounce;
+- **Suggestions** (174-200): only in Search mode, ≥ 2 chars, content ready; 150 ms debounce;
   `sRun` counter ignores stale replies; `GET api/suggest?q=`; results are links straight to the
   article. Arrow keys move between the input and the list; Escape or clicking outside hides it.
-- **Submit** (196-212): bumps `run`, disables `#go`, calls `doAsk` or `doSearch`; errors are
+- **Submit** (203-219): bumps `run`, disables `#go`, calls `doAsk` or `doSearch`; errors are
   shown in `#out` (escaped). `post()` throws with the server's `detail` when it's a string, else
   "Something went wrong. Try again." (so a 422 for a too-short question gives the generic text).
 - **Search** (`doSearch`, 214-225): `GET api/search?q=`; heading "Top N of about T results"

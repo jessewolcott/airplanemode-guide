@@ -4,7 +4,7 @@
 
 ```
 app.py              FastAPI app: config, lifespan, endpoints, model call, _heavy()   (265 lines)
-library.py          ZIM reading (libzim), search, sanitize/render articles, passages() (415)
+library.py          ZIM reading (libzim), search, sanitize/render articles, passages() (421)
 ask.py              "ask": article finding, BM25 ranking, prompt, check_answer()       (283)
 download.py         background ZIM downloader                                         (187)
 static/index.html   the single-page UI (inline CSS + JS, no external resources)
@@ -93,7 +93,7 @@ Standalone compose also accepts `MODEL` (llama.cpp `-hf` model, default
 
 ## How the platform wires it in (`../airplanemode`)
 
-- `compose.yaml`: service `guide`, image `ghcr.io/jessewolcott/airplanemode-guide:0.1.0`,
+- `compose.yaml`: service `guide`, image `ghcr.io/jessewolcott/airplanemode-guide:0.1.1`,
   `LLM_URL: ${LLM_URL-http://llm:8080}`, volume `guide-data:/data`,
   `mem_limit: ${GUIDE_MEM:-256m}`, `restart: unless-stopped`. Container port 8000, not published.
 - `Caddyfile`: `redir /guide /guide/` and `handle_path /guide/* { reverse_proxy guide:8000 }`.

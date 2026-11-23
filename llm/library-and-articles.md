@@ -79,7 +79,7 @@ Entries are served under `z/<id>/` so a ZIM's own relative links work unchanged:
 `href="../Lisbon"` resolves to `z/wv/Lisbon`. No link rewriting is needed except for the rare
 root-absolute `href="/X"`.
 
-`prefix_for(path)` (343-345) = `"../" * (path.count("/") + 2)`: the relative path from
+`prefix_for(path)` (349-351) = `"../" * (path.count("/") + 2)`: the relative path from
 `z/<id>/<path>` back to the app root (`Lisbon` → `../../`, `Lisbon/Alfama` → `../../../`).
 The page's stylesheet, icon, home link and search form use it.
 
@@ -144,7 +144,7 @@ Walks `list(root.iter())` and for each node:
 `zim_root` passed by `render_article` is `prefix[: -len("../../")]`, i.e. `"../" *
 path.count("/")`: from `Lisbon` it's `""` (→ `./`), from `Lisbon/Alfama` it's `../`.
 
-## The article page: `render_article(zim, title, path, raw_html, prefix)` (310-340)
+## The article page: `render_article(zim, title, path, raw_html, prefix)` (310-346)
 
 1. `lhtml.document_fromstring(raw_html)` → `article_root` → `sanitize` →
    `etree.tostring(root, encoding="unicode", method="html")`.
@@ -185,7 +185,7 @@ directly as a document would otherwise run its scripts on our origin.
 if something requests it directly; images referenced from articles are the main raw traffic
 (rare in `nopic`).
 
-## Passages (library.py:352-415)
+## Passages (library.py:358-421)
 
 `passages(raw_html, max_words=110)` is the splitter used by ask; documented in
 [ask-pipeline.md](ask-pipeline.md#2-split-into-passages-librarypassages). It parses the article

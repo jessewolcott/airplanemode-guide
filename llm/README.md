@@ -1,6 +1,6 @@
 # Travel Guide: how it's built (LLM / engineer reference)
 
-Checked-in notes (`.dockerignore` lists `llm`, so none of this reaches the image). Written from the code as of version 0.1.0
+Checked-in notes (`.dockerignore` lists `llm`, so none of this reaches the image). Written from the code as of version 0.1.1
 (2026-11). If the code and these notes disagree, the code wins: fix the notes.
 
 ## Overview

@@ -116,4 +116,4 @@ Image: `ghcr.io/jessewolcott/airplanemode-guide`.
 4. In `../airplanemode/compose.yaml`, bump `image: ghcr.io/jessewolcott/airplanemode-guide:X.Y.Z`
    (pinned, never `latest`); the platform's CI checks the image, Caddy route and
    `portal/apps.json` entry. Commit there.
-5. Current pin: `0.1.0`.
+5. Current pin: `0.1.1`.
