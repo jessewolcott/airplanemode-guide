@@ -151,8 +151,10 @@ path.count("/")`: from `Lisbon` it's `""` (→ `./`), from `Lisbon/Alfama` it's 
 2. Wraps it in the app's own HTML (all values `html.escape`d):
    - `<html lang>` from the ZIM's `Language` (first 2 chars, default `en`); `color-scheme: dark`.
    - `<title>{title} · Travel Guide</title>`, stylesheet `{prefix}static/article.css`, icon.
-   - `<header class="bar">`: `← Guide` home link (`href="{prefix}"`) and a GET search form
-     (`action="{prefix}"`, input `name="q"`). The index page reads `?q=` and runs a search.
+   - `<header class="bar">`: `← Guide` home link (`href="{prefix}"`), a GET search form
+     (`action="{prefix}"`, input `name="q"`; the index page reads `?q=` and runs a search), and
+     the AirplaneMode home button `a.am-home` (`href="{prefix}../"`, house icon; platform app
+     contract item 10). The tests check its depth on a page and a subpage.
    - `<article class="zim">{body}</article>`
    - `<footer class="attrib">`: "From **{zim title}** ({date}), available under CC BY-SA 4.0."
      plus "Online version: {source}" linking to `https://{source}/wiki/{quote(path)}` when the

@@ -189,13 +189,16 @@ def test_article_is_sanitized():
     assert r.status_code == 200 and r.headers["content-type"].startswith("text/html")
     assert "script-src 'none'" in r.headers["content-security-policy"]
     html = r.text.lower()
+    body = html.split("<article", 1)[1].split("</article>", 1)[0]
     for bad in ("<script", "onclick", "onload", "javascript:", "<iframe", "evil.example", "<style",
                 "background:red", "data:image/svg", "<svg", "menu stuff", "footer stuff", "[edit]"):
-        assert bad not in html, bad
+        assert bad not in body, bad
+        assert bad == "<svg" or bad not in html, bad  # the page's own bar has the home icon
     t = r.text
     assert 'href="Porto"' in t and 'href="Lisbon/Alfama"' in t, "internal links stay relative"
     assert 'href="./Porto"' in t, "absolute links point at the ZIM's root"
     assert 'href="../../static/article.css"' in t and 'action="../../"' in t
+    assert '<a class="am-home" href="../../../"' in t, "AirplaneMode home button, one level above the app"
     assert 'target="_blank"' in t and "ext" in t, "external links are marked"
     assert 'href="geo:38.72,-9.13"' in t, "geo: links open a map app"
     assert "pastel de nata" in t and "CC BY-SA" in t and "en.wikivoyage.org/wiki/Lisbon" in t
@@ -204,6 +207,7 @@ def test_article_is_sanitized():
 def test_subpage_and_redirect_and_raw_files():
     t = c.get(f"/z/{ZIM_ID}/Lisbon/Alfama").text
     assert 'href="../Lisbon"' in t and 'href="../../../static/article.css"' in t
+    assert '<a class="am-home" href="../../../../"' in t
     r = c.get(f"/z/{ZIM_ID}/Lisboa", follow_redirects=False)
     assert r.status_code == 302 and r.headers["location"] == "Lisbon", r.headers
     css = c.get(f"/z/{ZIM_ID}/_res_/style.css")
@@ -334,6 +338,8 @@ def test_index_page_uses_relative_urls():
     for absolute in ('fetch("/', "href=\"/", "src=\"/", "action=\"/"):
         assert absolute not in t, absolute
     assert "http://" not in t and "https://" not in t, "no outside resources"
+    assert '<a class="am-home" href="../"' in t and 'aria-label="AirplaneMode home"' in t, "home button"
+    assert ">AirplaneMode<" not in t, "the old text link is gone"
 
 
 # ---------------- downloader ----------------

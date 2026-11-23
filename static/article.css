@@ -7,12 +7,19 @@
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-[id] { scroll-margin-top: 64px; }  /* #section links land below the sticky bar */
+[id] { scroll-margin-top: 72px; }  /* #section links land below the sticky bar */
 body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.62 var(--sans); }
 
 header.bar { position: sticky; top: 0; z-index: 10; display: flex; gap: 10px; align-items: center; padding: 10px 16px; background: rgba(13, 15, 18, .94); border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
 header.bar a.home { flex: none; color: var(--dim); font: .8rem var(--mono); text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
 header.bar a.home:hover { color: var(--ink); border-color: var(--dim); }
+header.bar a.home:focus-visible, header.bar a.am-home:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* the AirplaneMode home button (platform app contract item 10): right end of the bar */
+header.bar a.am-home { flex: none; display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 10px;
+  color: var(--dim); background: var(--panel); border: 1px solid var(--line); text-decoration: none; transition: color .15s, border-color .15s; }
+header.bar a.am-home:hover { color: var(--accent); border-color: var(--dim); }
+header.bar a.am-home svg { display: block; }
+@media (prefers-reduced-motion: reduce) { header.bar a.am-home { transition: none; } }
 header.bar form { flex: 1; min-width: 0; }
 header.bar input { width: 100%; font: .95rem var(--sans); color: var(--ink); background: var(--panel); border: 1px solid var(--line2); border-radius: 8px; padding: 8px 11px; }
 header.bar input:focus { outline: none; border-color: var(--accent); }

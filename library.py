@@ -328,6 +328,12 @@ def render_article(zim: Zim, title, path, raw_html, prefix):
 <header class="bar">
   <a class="home" href="{prefix}" title="Travel Guide home">&#8592; Guide</a>
   <form action="{prefix}" method="get" role="search"><input name="q" type="search" placeholder="Search the guide" aria-label="Search the guide"></form>
+  <a class="am-home" href="{prefix}../" aria-label="AirplaneMode home" title="AirplaneMode home">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/>
+    </svg>
+  </a>
 </header>
 <article class="zim">
 {body}

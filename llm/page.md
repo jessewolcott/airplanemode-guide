@@ -6,14 +6,16 @@ root-absolute `fetch("/`, `href="/`, `src="/`, `action="/` in the index page). P
 duplicated between `index.html`'s inline `<style>` and `article.css` (`--bg #0d0f12`,
 `--accent #5ec4b6`, ...), matching the platform.
 
-## `static/index.html` (259 lines, one file, inline CSS + vanilla JS)
+## `static/index.html` (one file, inline CSS + vanilla JS)
 
 Served by `GET /` with `Cache-Control: no-cache`; it always loads, even with no content.
 
 ### Markup (77-113)
 
-- Header: compass icon (inline SVG), "Travel **Guide**", link `../` back to the AirplaneMode
-  portal.
+- Header: compass icon (inline SVG), "Travel **Guide**", and at the right end the AirplaneMode
+  home button `a.am-home` (`href="../"`, 44 px house icon, accent focus ring; platform app
+  contract item 10). It replaced the old "AirplaneMode" text link. No confirm on leaving: there's
+  nothing to lose. `test_index_page_uses_relative_urls` checks it's there.
 - `#banner` (`aria-live="polite"`): download / no-content status with a progress meter.
 - Mode switch: two buttons `#modeAsk` / `#modeSearch` with `aria-pressed`.
 - `form#form.box`: `input#q` (`maxlength=300`), button `#go`, suggestions `ul#sugg`.
@@ -71,10 +73,10 @@ HTML built server-side by `render_article()` (see
 [library-and-articles.md](library-and-articles.md#the-article-page-render_articlezim-title-path-raw_html-prefix));
 no JavaScript at all (CSP `script-src 'none'`).
 
-`static/article.css` (65 lines):
-- Sticky `header.bar` with the "← Guide" link and a full-width search input (submits `?q=` to
-  the index page). `[id] { scroll-margin-top: 64px }` so `#anchor` links from passage cards land
-  below the bar.
+`static/article.css`:
+- Sticky `header.bar` with the "← Guide" link, a full-width search input (submits `?q=` to
+  the index page) and the AirplaneMode home button (`a.am-home`, 44 px) at the right end.
+  `[id] { scroll-margin-top: 72px }` so `#anchor` links from passage cards land below the bar.
 - `article.zim`: 46rem column, 17px/1.62 text, accent links; `a.ext` dimmed with " ↗";
   `a.geo` prefixed with "⌖ ".
 - Tables become horizontally scrollable blocks; template colours are overridden
